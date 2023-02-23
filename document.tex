@@ -1,0 +1,450 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{listings, lstautogobble}
+\lstset{
+	language=Matlab, autogobble=true
+}
+\title{Analysis 3 MA0003: Zusammenfassung}
+\author{Jonas Treplin}
+\usepackage{stmaryrd}
+
+\makeatletter
+\newcommand{\fixed@sra}{$\vrule height 2\fontdimen22\textfont2 width 0pt\shortrightarrow$}
+\newcommand{\shortarrow}[1]{%
+	\mathrel{\text{\rotatebox[origin=c]{\numexpr#1*45}{\fixed@sra}}}
+}
+\makeatother
+\begin{document}
+\maketitle
+
+\section{Maßtheorie}
+\begin{definition}[$\sigma$-Algebra]
+    Ein System $\mathcal{A} \subset P(\Omega)$ heißt $\sigma$-Algebra falls:
+    $$\Omega \in \mathcal{A}$$
+    $$A\in \mathcal{A} \Rightarrow A^c \in \mathcal{A}$$
+    $$A_i \in \mathcal{A} \Rightarrow \bigcup_{i=1}^\infty A_i \in \mathcal{A}, $$
+    Die Elemente $A\in \mathcal{A}$ heißen messbar. Eine Menge $(\Omega, \mathcal{A})$ heißt Messraum.
+\end{definition}
+\begin{theorem}
+	Für jede $\sigma$-Algebra $ \mathcal{A}$ gilt:
+	\begin{itemize}
+		\item  $\emptyset \in \mathcal{A}$
+		\item $A_j \in \mathcal{A} \Rightarrow \bigcap_{j=1}^\infty A_j \in \mathcal{A}$
+	\end{itemize}
+\end{theorem}
+\begin{theorem}[$\sigma$-Algebra auf Urbildern]
+	Folgende Konstruktion ist selbst wieder eine $\sigma$-Algebra:
+	$$\tilde{\mathcal{A}}=\{f^{-1}(A)| A\in \mathcal{A}\}$$
+\end{theorem}
+\begin{definition}[Erzeugen von $\sigma$-Algebren]
+ 	Für $\mathcal{E} \subset P(\Omega)$ ist die erzeugte $\sigma$-Algebra definiert als:
+ 	$$\sigma(\mathcal{E}) = \bigcap\{\mathcal{A}| \mathcal{A} \text{ ist }\sigma\text{-Algebra und } \mathcal{E} \subset \mathcal{A}\}$$
+\end{definition}
+\begin{theorem}
+	Es gilt:
+	\begin{itemize}
+		\item $E\subset F \Rightarrow \sigma(E) \subset \sigma(F)$
+		\item ist $E$ selbst $\sigma$-Algebra dann ist $\sigma(E) = E$
+	\end{itemize}
+\end{theorem}
+\begin{definition}[Borel-$\sigma$-Algebra]
+	Wir definieren die Borel-$\sigma$-Algebra als:
+	$$\sigma(\{O | O\in \Omega \text{ offen}\})$$
+\end{definition}
+\begin{theorem}
+	Seien $\mathcal{J}^n$ die halboffenen Quader und $\mathcal{J}^n_\mathbb{Q}$ die halboffenen Quader mit rationalen Koeffizienten im $\mathbb{R}^n$. Sowie $\mathcal{O}^n, \mathcal{C}^n, \mathcal{K}^n$ die offenen, abgeschlossenen und kompakten Mengen auf dem $\mathbb{R}^n$, dann gilt:
+	$$\mathcal{B}(\mathbb{R}^n) = \sigma(\mathcal{J}^n) = \sigma(\mathcal{J}^n_\mathbb{Q}) = \sigma(\mathcal{O}^n) = \sigma(\mathcal{C}^n) = \sigma(\mathcal{K}^n)$$
+\end{theorem}
+\begin{definition}[Grenzwert von Mengen]
+	Wir definieren für $(A_j)_{j\in \mathbb{N}}$:
+	\begin{itemize}
+		\item $\liminf A_j := \bigcup_{i=1}^\infty\bigcap_{j=i}^\infty A_j$ Also alle Elemente von die in nur endlich vielen $A_j$ nicht enthalten sind.
+		\item $\limsup A_j := \bigcap_{i=1}^\infty \bigcup_{j=i}^\infty A_j$ Also alle Elemente die in unendlich vielen $A_j$ enthalten sind.
+	\end{itemize}
+\end{definition}
+\begin{definition}[Figur]
+	Eine Figur ist jede Menge, die durch die Vereinigung endlich vieler Quader erzeugt werden kann. Man bezeichnet $\mathcal{F}^n$ als den Raum der Figuren.
+\end{definition}
+\begin{definition}[Ring]
+	Sei $\mathcal{R} \subset P(\Omega)$ mit:
+	$$A, B \in \mathcal{R} \Rightarrow A\\B \in \mathcal{R}$$
+	$$A, B \in \mathcal{R} \Rightarrow A\cup B \in \mathbb{R}$$
+	Dann heißt $\mathcal{R}$ Ring.
+\end{definition}
+\begin{definition}[Äußeres Maß]
+	Das äußere Maß $\lambda^{n, *}$ von $M$ ist das Infimum der Größen aller Überdeckungen im Raum der Figuren von $M$.
+\end{definition}
+\begin{definition}[Maß]
+	Ein Maß $\mu: \mathcal{A} \to [0, \infty)$ auf einer $\sigma$-Algebra $\mathcal{A}$ ist charakterisiert durch folgende Eigenschaften:
+	$$\mu(\emptyset) = 0$$
+	$$\mu(\biguplus_{j=1}^\infty) = \sum_{j=1}^{\infty}\mu(A_j)$$
+	Ein Maß heißt endlich falls $\mu(\Omega) < \infty$ und $\sigma$-endlich falls eine Folge von $A_1 \subset A_2 \subset ...$ existiert mit $A_j \shortarrow{1} \Omega$ und $\mu(A_j) < \infty$.\\
+	Eine Menge $(\Omega, \mathcal{A}, \mu)$ heißt Maßraum.
+	
+\end{definition}
+\begin{theorem}[Rechenregeln für Maße]
+	Es gilt:
+	\begin{itemize}
+		\item $\mu(A \cap B) + \mu(A \cup B) = \mu(A) + \mu(B)$
+		\item $\mu(A\cup B) \leq \mu(A) + \mu(A)$
+		\item $A\subset B \Rightarrow \mu(A) \leq \mu(B)$
+		\item $A_j \shortarrow{1} A \Rightarrow \mu(A_j) \shortarrow{1} \mu(A)$
+		\item Falls $\mu(A_0) < \infty$ dann gilt auch $A_j \shortarrow{3}A \Rightarrow \mu(A_j) \shortarrow{3}\mu(A)$
+		\item $\mu(\bigcup_{j=0}^\infty A_j) \leq \sum_{j=0}^{\infty}\mu(A_j)$
+	\end{itemize}
+\end{theorem}
+\begin{definition}[Dynkin-System]
+	Ein System $\mathcal{D}\subset P(\Omega)$ heißt Dynkin-System falls:
+	$$\Omega \in \mathcal{D}$$
+	$$D \in \mathcal{D} \Rightarrow D^c \in \mathcal{D}$$
+	$$D_j \in \mathcal{D} \Rightarrow\biguplus_{j=1}^\infty D_j \in \mathcal{D}$$
+\end{definition}
+\begin{definition}[Minimales Dynkin-System]
+	Wir definieren das minimale Dynkin System für $\mathcal{E} \subset P(\Omega)$ als:
+	$$\delta(\mathcal{E}) = \bigcup\{\mathcal{D}| \mathcal{D} \text{ ist Dynkin-System und } \mathcal{E} \subset \mathcal{D}\}$$
+\end{definition}
+\begin{theorem}
+	Es gilt:
+	\begin{itemize}
+		\item $E \subset F \Rightarrow \delta(E) \subset \delta(F)$
+		\item Ist $E$ selbst Dynkin System so ist $\delta(E) = E$.
+		\item $E \subset \delta(E) \subset \sigma(E)$
+	\end{itemize}
+\end{theorem}
+\begin{theorem}
+	Es gilt für alle Dynkin-Systeme $\mathcal{D}$:
+	$$\mathcal{D} \text{ schnitstabil} \iff \mathcal{D} \text{ ist }\sigma\text{-Algebra}$$
+	Außerdem falls ein Erzeugendensystem $E$ schnittstabil ist, dann ist $\delta(E) = \sigma(E)$.
+\end{theorem}
+\begin{theorem}[EIndeutigkeit der Maßerweiterung]
+	Sei $E\subset P(\Omega)$ schnittstabil und seien $\mu, \nu$ Maße mit:
+	$$\mu|_E = \nu|_E$$
+	und sei $E_j \in E$ mit $E_j\shortarrow{1} \Omega$, dann ist:
+	$\mu(A) = \nu(A) \forall A \in \sigma(E)$
+\end{theorem}
+\begin{definition}[Lebesgue-Borel-Maß]
+	Die Maßerweiterung für den Flächeninhalt eines Quaders ist eindeutig und wird mit $\lambda^n$ als Lebesgue-Borel-Maß bezeichnet
+\end{definition}
+\begin{definition}[Vervollständigung eines Maßes]
+	Ein Maßraum heißt vollständig, falls jede Teilmenge einer Nullmenge wieder messbar ist. Man kann einen Maßraum vervollständigen durch:
+	$$\tilde{\mathcal{A}} = \{A| \exists M, N \in \mathcal{A}: M\subset A \subset N \land \mu(N/M) = 0\}$$
+	Man definiert dann $\mu(A) := \mu(N)$. Die Vervollständigung des Lebesgue-Borel-Maß wird als Lebesgue-Maß bezeichnet.
+\end{definition}
+\begin{theorem}[Erstes Littlewood'sches Prinzip]
+	Sei $A \subset \mathbb{R}^n$, A ist Lebesgue-messbar genau dann wenn zu jedem $\epsilon > 0$ eine offene Menge $A \subset O_\epsilon$ existiert, sodass:
+	$$\lambda^{n, *} (O_\epsilon\\A) < \epsilon$$
+\end{theorem}
+\begin{definition}[messbare Abbildung]
+	Für eine messbare Abbildung $f: (\Omega, \mathcal{A}) \to (\tilde{\Omega}, \tilde{\mathcal{A}})$ gilt: $^{-1}(A) \in \mathcal{A} \forall A \in \tilde{\mathcal{A}}$.
+\end{definition}
+\begin{theorem}
+	Sei $f: (\Omega, \mathcal{A}) \to (\tilde{\Omega}, \tilde{\mathcal{A}})$ und $\mathcal{E}$ ein Erzeugendensystem von $\tilde{\mathcal{A}}$, dann ist $f$ bereits messbar falls gilt:
+	$$f^(E) \in \mathcal{A} \forall E \in \mathcal{E}$$
+\end{theorem}
+\begin{theorem}
+	Für $f: \Omega \to [-\infty, \infty]$ sind folgende Eigenschaften äquivalent:
+	\begin{itemize}
+		\item $f$ ist messbar.
+		\item $\{\omega | f(\omega) \geq a\}\in\mathcal{A}\forall a$
+		\item $\{\omega | f(\omega) > a\}\in\mathcal{A}\forall a$
+		\item $\{\omega | f(\omega) \leq a\}\in\mathcal{A}\forall a$
+		\item $\{\omega | f(\omega) < a\}\in\mathcal{A}\forall a$
+	\end{itemize}
+\end{theorem}
+\begin{theorem}
+	Sei $\Omega_j$ eine Folge mit $\Omega = \bigcup\Omega_j$ dann ist $f$ messbar gdw. $f|_{\Omega_j}$ alle messbar sind.	
+\end{theorem}
+\begin{theorem}
+	Sei $f_j:\Omega \to [-\infty, \infty]$ eine Folge messbarer Funktionen, dann ist auch:
+	$$\sup f_j, \inf f_j, \limsup f_j, \liminf f_j$$
+	alle messbar. Auch ist der Punktweise Grenzwert dieser Funktion falls er existiert messbar.
+\end{theorem}
+\begin{theorem}
+	Kompositionen zweier messbarer Funktionen sind wieder messbar.
+\end{theorem}
+\begin{theorem}[Bildmaß]
+	Wir definieren $f(\mu)$ als $f(\mu)(A) = \mu(f^{-1}(A))$ als das Bildmaß.
+\end{theorem}
+\begin{theorem}
+	Das Lebesgue-Borel-Maß $\lambda^n$ ist translationsinvariant. D.h. für jede affine Abbildung $T(x) = Ax+b, A\in \mathbb{R}^{n\times n}, b\in \mathbb{R}^n$ gilt: $$\mu(T(A)) = \mu(A)$$
+	Außerdem ist jedes andere translationsinvariante Maß ein skalares Vielfaches des Lebesgue-Maß.
+	Zudem ist falls $U \in O(n)$: 
+	$$\mu(U(A)) = \mu(A)$$
+	Zusammen ergibt sich, dass $\lambda^n$ bewegungsinvariant ist:
+\end{theorem}
+\begin{theorem}
+	Sei $L \in GL(n)$ dann gilt für das Bildmaß:
+	$$L(\lambda^n) = \frac{1}{|det(L)|} \lambda^n$$
+\end{theorem}
+\begin{theorem}[Vitali-Menge]
+	Es gibt eine Menge $K$ die nicht Borel-Messbar ist.
+\end{theorem}
+\section{Lebesgue-Integral}
+\begin{definition}[Einfache Funktion]
+	Eine Funktion $f: \Omega \to \mathbb{R}$ heißt einfache FUnktion wenn sie messbar ist und nur endlich viele Werte annimmt. Jede einfache Funktion hat also die Form:
+	$$f(\omega) = \sum_{j=1}^n1_{A_j}(\omega)\alpha_j$$
+	Wir definieren $E(\Omega)$ als den Raum der einfachen Funktionen auf $\Omega$ und $E_+(\Omega)$ als den Raum der positiven einfachen Funktionen.
+\end{definition}
+\begin{theorem}[Approximation durch einfache Funktionen]
+	Sei $f: \Omega \to [0, \infty]$ messbar, dann gibt es eine monoton wachsende Folge von positiven einfachen Funktionen$f_j$, sodass $f = \sup f_j$. Es ist sogar $f$ nur genau dann messbar, wenn eine solche Folge existiert. 
+\end{theorem}
+\begin{theorem}[Monotonieprinzip]
+	Sei $F$ eine Menge von Funktionen mit folgenden Eigenschaften:
+	\begin{itemize}
+		\item $1_A \in F$ für alle $A\in \mathcal{A}$.
+		\item $f,g \in F \Rightarrow \alpha f + \beta g \in F$
+		\item Sei $f_j$ eine monoton wachsende Folge in $F$, dann ist $\sup f_j \in F$.
+	\end{itemize}
+	Dann enthält $F$ die Menge aller messbaren Funktionen.
+\end{theorem}
+\begin{definition}[Lebesgue-Integral für einfache Funktionen]
+	Sei $f$ eine einfache positive Funktion mit Darstellung: $f = \sum_{j=1}^{n} \alpha_j1_{A_j}$, wobei die $A_j$ paarweise disjunkt seien. Dann definieren wir:
+	$$\int_\Omega f d \mu = \sum_{j=1}^{n} \alpha_j\mu(A_j)$$
+\end{definition}
+\begin{definition}[Lebesgue-Integral für messbare positive Funktionen]
+	Sei $f: \Omega \to [0, \infty]$ messbar. Dann existiert eine monotone Folge von einfachen Funktionen $f_j$ mit $\sup f_j =f$. Das Lebesgue-integral von $f$ ist definiert als:
+	$$\int_\Omega f d\mu = \sup\int_\Omega f_j d\mu$$
+\end{definition}
+\begin{theorem}[Markov-Ungleichung]
+	Es gilt für jede positive messbare Funktion $f$ und jede positive reelle Zahl $w$:
+	$$\int_\Omega f d\mu \geq w \mu(f\geq w)$$
+\end{theorem}
+\begin{definition}
+	Sei $f: \Omega \to [-\infty, \infty]$ messbar, dann heißt $f$ integrierbar, falls:
+	$$\int_\Omega f_+ d\mu < \infty, \int_\Omega f_- d\mu < \infty$$
+	Das Lebesgue-integral ist dann definiert als:
+	$$\int_\Omega f d\mu := \int_\Omega f_+ d\mu - \int_\Omega f_- d\mu$$
+\end{definition}
+\begin{theorem}
+	Es ist äquivalent:
+	\begin{enumerate}
+		\item $f$ ist integrierbar
+		\item $f_+$ und $_-$ sind integrierbar.
+		\item Es gibt integrierbare Funktionen $u, v$ sodass $f = u-v$.
+		\item Es gibt eine integrierbare Funktion $g$ sodass $|f| \leq g$.
+		\item $|f|$ ist integrierbar.
+	\end{enumerate}
+\end{theorem}
+\begin{theorem}
+	Das Integral ist monoton linear. Außerdem ist: $|\int_\Omega f d\mu| \leq \int_\Omega |f| d\mu$
+\end{theorem}
+\begin{theorem}[Klopapiersatz]
+	Ist $f= g$ fast überall dann gilt: $$\int_\Omega f d\mu = \int_\Omega g d\mu$$
+\end{theorem}
+\begin{theorem}[Beppo-Levi]
+	Sei $f_j$ eine fast überall monoton wachsende Folge nicht negativer messbarer Funktionen. Dann gilt:
+	$$\lim \int_\Omega f_j d\mu = \int_\Omega\lim f_j d\mu$$
+\end{theorem}
+\begin{theorem}[Lemma von Fatou]
+	Sei $f_j: \Omega \to [-\infty, \infty]$ fast überall nicht negativ und messbar Dann gilt:
+	$$\int_\Omega \liminf f_j d\mu \leq \liminf \int_\Omega f_jd \mu$$
+\end{theorem}
+\begin{theorem}[Satz der dominierten Konvergenz]
+	Sei $f_j: \Omega \to [-\infty, \infty]$ eine Folge messbarer Funktionen, die punktweise f.ü. gegen $f$ konvergiert. Weiter existiere eine integrierbare Majorante $M: \Omega \to[0, \infty]$ mit $|f_j| \leq M$	f.ü. Dann ist: 
+	$$\lim\int_\Omega f_j d\mu = \int_\Omega f d\mu$$
+\end{theorem}
+\begin{theorem}
+	Ist $f: (a, b) \to \mathbb{R}$ differenzierbar dann gilt: $f(b) - f(a) = \int_{a}^{b}f'(x)dx$
+\end{theorem}
+\begin{theorem}
+	Auf einem kompakten Intervall ist jede regelintegrierbare Funktion auch Lebesgue-integrierbar
+\end{theorem}
+\begin{definition}[Absolut stetig]
+	Eine Funktion $f$ heißt absolut stetig falls für jedes $\epsilon > 0$ ein $\delta > 0$ existiert, sodass für jede endliche Folge von Teilintervallen $]x_k, y_k[$ mit $\sum_{j=1}^{n}y_j-x_j < \delta$ gilt:
+	$$\sum_{j=1}^{n}|f(y_k)-f(x_k)| < \delta$$
+\end{definition}
+\begin{theorem}
+	Eine Funktion $F$ ist genau dann darstellbar als: $F(x) = \int_{0}^{x}f(t)dt$ wenn sie absolut stetig ist. Es gilt dann $F' = f$ f.ü.
+\end{theorem}
+\section{$L^p$-Räume}
+\begin{definition}
+	Sei $p \in [1, \infty)$ dann definieren wir:
+	$$s_p(f) = (\int |f|^p d\mu)^{1/p}$$
+	und 
+	$$\mathcal{L}^p(\Omega) := \{f | f: \Omega \to [-\infty, \infty] \text{ messbar und } s_p(f)<\infty\}$$
+	Außerdem sei $$L^p := \mathcal{L}^p/\sim$$ Wobei $f\sim g \iff \int f-g d\mu = 0$.
+\end{definition}
+
+\begin{theorem}[Young'sche Ungleichung]
+	Seien $a, b \geq 0$ und $p, q > 1$, sodass $1/p + 1/q =1$. Dann ist: $$ab \leq \frac{1}{p}a^p+\frac{1}{q}b^q$$
+\end{theorem}
+\begin{theorem}[Hölder Ungleichung]
+	Für $p, q > 1$, sodass $1/p + 1/q =1$ gilt:
+	$$\Vert fg\Vert_1 \leq \Vert f\Vert_p \Vert g \Vert_q$$
+\end{theorem}
+\begin{theorem}[Minkowski Ungleichung]
+	Es gilt die Dreiecksungleichung:
+	$$(\int |f+g|^pd\mu)^{\frac{1}{p}} \leq (\int |f|^pd\mu)^{\frac{1}{p}} + (\int |g|^pd\mu)^{\frac{1}{p}}$$
+\end{theorem}
+\begin{definition}[p-Norm]
+	Sei $p\in [0, \infty)$, dann ist $$\Vert f \Vert_p := (\int |f|^pd\mu)^{\frac{1}{p}}$$
+	eine Norm in $L^p$.
+\end{definition}
+\begin{definition}[Wesentliches Supremum]
+	Das wesentliche Supremum für messbares $f$ sei definiert als:
+	$$\text{esssup}(f) := \inf\{M | M \geq f \text{ fast überall}\}$$
+	Außerdem seien $\mathcal{L}:=\{f|e\text{esssup}(f)< \infty\}$ und $L^\infty = \mathcal{L}^\infty/\sim$.
+\end{definition}
+\begin{theorem}
+	Auf $L^p$ ist $\Vert f\Vert_\infty := \text{esssup}(f)$ eine Norm.
+\end{theorem}
+\begin{definition}[Konvergenzbegriffe]
+	Eine Folge $f_j$ konvergiert gegen $f$:
+	\begin{itemize}
+		\item in der $p$-Norm oder im $p$-ten Mittel falls:
+		$$\Vert f_j -f\Vert_p \to 0$$
+		\item punktweise fast überall falls:
+		$$f_j (x) \to f(x)$$
+		fast überall.
+		\item im Maß falls:
+		$$\lim_{j\to \infty} \mu(|f_j - f |> \epsilon) = 0$$
+	\end{itemize}
+\end{definition}
+\begin{theorem}[Vollständigkeit der $L^p$-Räume]
+	Für $p \in [1, \infty]$ ist 
+\end{theorem}
+\begin{theorem}
+	Falls $f_j \to f$ in $\Vert . \Vert_p$ Dann gibt es eine Teilfolge, sodass $f_{j_k} \to f$ fast überall. 
+\end{theorem}
+\begin{theorem}
+	Für die Konvergenz im Maß gilt:
+	\begin{itemize}
+		\item $f_j \to g$ und $f_j \to f$ dann ist $f=g$ fast überall.
+		\item $g_j \to g$ und $f_j \to f$ dann gilt: $\alpha f_j + \beta g_j \to \alpha f + \beta g$.
+		\item Konvergiert $f_j \to f$ punktweise f.ü. dann gilt auch Konvergenz im Maß
+		\item $f_j \to f$ im Maß, dann existiert eine Teilfolge $f_{j_k} \to f$ punktweise fast überall.
+	\end{itemize}
+\end{theorem}
+\section{Parameterabhängige Integrale}
+\begin{theorem}
+	Sei $f: X \times \Omega \to \mathbb{R}$ mit $X \subset \mathbb{R}^n$ und weiterhin sei:
+	\begin{itemize}
+		\item $\omega \mapsto f(x, \omega)$ integrierbar für alle $x$
+		\item $x\mapsto f(x, \omega)$ stetig in $x^*$ für fast alle $\omega$.
+		\item $M\in \mathcal{L}^1$ eine Majorante: $|f(x, \omega)| \leq M(\omega)$ für alle $x$ und fast alle $\omega$.
+	\end{itemize}
+	Dann ist $g(x) = \int_\Omega f(x, \omega) d\mu$ stetig an $x^*$.
+\end{theorem}
+\begin{theorem}
+	Sei $f: X \times \Omega \to \mathbb{R}$ mit $X \subset \mathbb{R}^n$ und weiterhin sei:
+	\begin{itemize}
+		\item $\omega \mapsto f(x, \omega)$ integrierbar für alle $x$
+		\item $\partial_if(x, \omega)$ existiert für fast alle $\omega$ und alle $x$.
+		\item $M\in \mathcal{L}^1$ eine Majorante: $|\partial_if(x, \omega)| \leq M(\omega)$ für alle $x$ und fast alle $\omega$.
+	\end{itemize}
+	Dann gilt für $g(x) = \int_\Omega f(x, \omega) d\mu$:
+	$$\partial_ig(x) = \int_\Omega\partial_if(x, \omega) d\mu$$
+\end{theorem}
+\section{Mehrfachintegrale}
+\begin{definition}[Produkt-$\sigma$-Algebra]
+	Seien $(\Omega_j, \mathcal{A}_j)$ Messräume. Dann ist die Produkt-$\sigma$-Algebra definiert als:
+	$$\mathcal{A} = \mathcal{A}_1 \otimes ... \otimes \mathcal{A}_n = \sigma(\bigcup_{j=1}^n\pi_j^{-1}(\mathcal{A}_j))$$
+	Wobei $\pi_j (\omega_1, ..., \omega_n) = \omega_j$ die Projektion auf die $j$-te Komponente sei.
+\end{definition}
+\begin{theorem}
+	Seien $(\Omega_j, \mathcal{A}_j)$ Messräume mit Erzeugendensystemen $\mathcal{E}_j$. Exisitieren für jedes $j$ eine Folge von $E_k\in \mathcal{E}_j$, sodass $\sup E_k = \Omega_j$ gilt, dann ist für $\mathcal{E}_1 \star ... \star\mathcal{E}_n := \{E_1 \times ... \times E_n | E_j \in \mathcal{E}_j	\}$:
+	$$\sigma(\mathcal{E}_1)\otimes ... \otimes \sigma(\mathcal{E}_n) = \sigma(\mathcal{E}_1 \star ... \star\mathcal{E}_n)$$
+\end{theorem}
+\begin{definition}[Schnitte]
+	Wir definieren für eine Menge $A\subset X_1 \times X_2$ die Schnitte:
+	\begin{itemize}
+		\item $A_{x_1} := \{x_2 | (x_1, x_2) \in A\}\subset X_2$
+		\item $A^{x_2} := \{x_1 | (x_1, x_2) \in A\}\subset X_1$ 
+	\end{itemize}
+	Analog für eine Funktion $f: X_1 \times X_2 \to Y$:
+	\begin{itemize}
+		\item $f_{x_1}(x_2) := f(x_1, x_2)$
+		\item $f_{x_2}(x_1):= f(x_1, x_2)$
+	\end{itemize}
+\end{definition}
+\begin{theorem}[Prinzip von Cavalieri]
+	Sei $A\in \mathcal{A}_2\otimes\mathcal{A}_2$ und $f:X_1 \times X_2 \to Y$ messbar. Dann sind  $A_{x_1}$ und $f_{x_1}$ messbar  für jedes Feste $x_1$. Analog gilt dies auch für $X_2$.
+	Mit den Maßen $\mu_1, \mu_2$ ist auch die Funktion $m_1 (x_1) = \mu_2(A_{x_1})$ messbar. Dies gilt auch analog für $X_2$.
+\end{theorem}
+\begin{theorem}[Produktmaß]
+	Wir definieren das Produktmaß auf $(X_1\times X_2, \mathcal{A}_1 \otimes \mathcal{A}_2)$ als:
+	$$\mu_1\otimes\mu_2(A_1\times A_2) = \mu_1(A_1)\mu_2(A_2)$$
+	Dieses Maß erfüllt für $A\subset X_1 \times X_2$:
+	$$\mu_1\otimes\mu_2(A) = \int_{X_1} \mu_2(A_{x_1}) dx_1 = \int_{X_2} \mu_1(A_{x_2}) dx_2$$
+\end{theorem}
+\begin{theorem}[Satz von Tonelli]
+	Sei $f: X_1 \times X_2 \to [0, \infty]$, dann gilt:
+	Die Funktionen $x_1 \mapsto \int_{X_2} f_{x_1}(x_2)dx_2$ und $x_2 \mapsto \int_{X_1}f^{x_2}(x_1) dx_1$ sind messbar und:
+	$$\int_{X_1\times X_2}f(x, x)dx = \int_{X_1}(\int_{X_2}f(x_1, x_2) dx_2)dx_1 =  \int_{X_2}(\int_{X_1}f(x_1, x_2) dx_1)dx_2$$
+\end{theorem}
+\begin{theorem}[Satz von Fubini]
+	Sei $f: X_1 \times X_2 \to \mathbb{R}$ integrierbar, dann ist: 
+	\begin{itemize}
+		\item $f_{x_1}$ und $f^{x_2}$ für fast alle $x_1$ bzw. $x_2$ integrierbar.
+		\item  $x_1 \mapsto \int_{X_2} f_{x_1}(x_2)dx_2$ und $x_2 \mapsto \int_{X_1}f^{x_2}(x_1) dx_1$ integrierbar.
+		\item 	$$\int_{X_1\times X_2}f(x, x)dx = \int_{X_1}(\int_{X_2}f(x_1, x_2) dx_2)dx_1 =  \int_{X_2}(\int_{X_1}f(x_1, x_2) dx_1)dx_2$$
+	\end{itemize}
+	Um die Integrierbarkeit zu beweisen kann der Satz von Tonelli verwendet werden.
+\end{theorem}
+\section{Parametertransformationen}
+\begin{theorem}[Transformationsformel]
+	Seien $\Phi: \tilde{\Omega} \to \Omega$  und $f:\Omega \to [0, \infty]$ messbar. Dann gilt:
+	$$\int_\Omega fd\Phi(\mu) = \in_{\tilde{\Omega}}f\circ \Phi d\mu$$
+\end{theorem}
+\begin{theorem}[Transformationssatz von Jacobi]
+	Sei $U, V \subset \mathbb{R}^n, \Phi: U\to V$ ein Diffeomorphismus Sei $f: V\to [-\infty, \infty]$ messbar, dann gilt:
+	$$\int_V f(y)d\lambda^n(y) = \int_Uf(\Phi(u))|\det D\Phi(u)| d\lambda^n(u)$$
+	falls $f \geq 0$ oder einer der beiden Seiten integrierbar ist.
+\end{theorem}
+Einige nützliche Transformationen:
+\begin{enumerate}
+	\item Polarkoordinaten in der Ebene $\Phi: (0, \infty)\times(-\pi, \pi) \to \mathbb{R}^2, r, \theta \mapsto (r \cos \theta, r\sin \theta)$, es ist $|\det \Phi(r, \theta)| = r$.
+	\item Kugelkoordinaten $\Phi: (0, \infty)\times(-\pi, \pi) \times (-\frac{\pi}{2}, \frac{\pi}{2})\to \mathbb{R}^2$:
+	$$\Phi(r, \theta, \phi) = (r\cos(\theta)\cos(\phi), r\sin(\theta)\cos(\phi), r \sin(\phi))$$
+	Mit $|\det D\Phi(r, \theta, \phi)| = r^2 \cos(\phi)$
+\end{enumerate}
+\section{Approximationssätze}
+\begin{theorem}[Jensen'sche Ungleichung]
+	Sei $\mu$ ein Wahrscheinlichkeitsmaß. Sei $I$ ein Intervall und $k: I \to \mathbb{R}$ konvex und $f: \Omega \to I$ integrierbar, dann ist: 
+	$$k(\int_\Omega f d\mu) \leq \int_\Omega k\circ f d\mu$$
+\end{theorem}
+\begin{definition}[Faltung]
+	Sei $f,g: \mathbb{R}^n \to [-\infty, \infty]$, dann heißt:
+	$$(f\star g )(y) := \int_{\mathbb{R}^n}f(x)g(y-x)dx$$
+	falls existent Faltung von $f$ und $g$.
+\end{definition}
+\begin{theorem}
+	Es gilt:
+	$$\Vert f\star g\Vert_p \leq \Vert f\Vert_p\Vert g\Vert_1$$
+\end{theorem}
+\begin{definition}[mollifier]
+	Eine Funktion $\phi\in\mathcal{L}^1 $ mit $\phi\geq 0$ und $\Vert \phi \Vert_1 = 1$ heißt Mollifier/Glättungskern.
+\end{definition}
+\begin{theorem}
+	Sei $f\in \mathcal{L}^p(\mathbb{R}^n)$ und $\phi$ ein Mollifier dann gilt für $\phi_\epsilon:= \epsilon^{-n}\phi(x/\epsilon)$:
+	$$\Vert f\star \phi_\epsilon -f\Vert_p \to 0$$
+\end{theorem}
+\begin{definition}[Support]
+	Der Support spielt mit dem ADC auf der Botlane. \\
+	Der Träger/Support von $f$ ist definiert als:
+	$$\text{supp}(f) = \overline{\{x | f(x) \neq 0\}}$$
+	Weiter definieren wir $C^\infty_c$ als die Menge der $C^\infty$-Funktionen mit kompakten Träger.
+\end{definition}
+\begin{theorem}
+	Für $\phi \in C_c^\infty$ gilt:
+	$$\partial^\alpha(f\star \phi) = f\star \partial^\alpha\phi$$
+\end{theorem}
+\begin{theorem}
+	$$\overline{C_c^\infty}^{\Vert . \Vert_p} = L^p$$
+\end{theorem}
+\begin{theorem}[Egorov]
+	Sei $\mu$ ein endliches Maß. Sei $f_j \to f$ fast überall so konvergiert $f_j$ fast gleichmäßig gegen $f$. D.h. zu jedem $\delta > 0$ existiert eine Menge $E$ mit $\mu(E) < \delta$, sodass $f_j|_{E^c} \to f|_{E^c}$ gleichmäßig.
+\end{theorem}
+\begin{theorem}[Lusin]
+	Sei $\mu$ ein endliches Maß und $f \Omega \to \mathbb{R}$ integrierbar dann gibt es zu jedem $\epsilon > 0$ eine kompakte Menge $K$ mit $\mu(\Omega\\K) < \epsilon$ sodass $f|_K$ stetig ist.  
+\end{theorem}
+\end{document}

@@ -1,0 +1,426 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.11)  23 FEB 2023 13:45
+entering extended mode
+**./document.tex
+(document.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-08-07>
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls"
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size10.clo"
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+) ("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.st
+y"
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+) ("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.sty
+"
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+)
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.st
+y"
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.st
+y"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty
+"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen135
+))
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty
+"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen136
+)
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty
+"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count176
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count177
+\leftroot@=\count178
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count179
+\DOTSCASE@=\count180
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box45
+\strutbox@=\box46
+\big@size=\dimen137
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count181
+\c@MaxMatrixCols=\count182
+\dotsspace@=\muskip16
+\c@parentequation=\count183
+\dspbrk@lvl=\count184
+\tag@help=\toks18
+\row@=\count185
+\column@=\count186
+\maxfields@=\count187
+\andhelp@=\toks19
+\eqnshift@=\dimen138
+\alignsep@=\dimen139
+\tagshift@=\dimen140
+\tagwidth@=\dimen141
+\totwidth@=\dimen142
+\lineht@=\dimen143
+\@envbody=\toks20
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssymb.s
+ty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.
+sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.
+sty"
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.st
+y"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.
+sty"
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graph
+ics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdfte
+x.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen144
+\Gin@req@width=\dimen145
+)
+\c@theorem=\count188
+\c@definition=\count189
+
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/algorithms\algorit
+hm.sty"
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count190
+\float@exts=\toks23
+\float@box=\box47
+\@float@everytoks=\toks24
+\@floatcapt=\box48
+)
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks25
+\c@algorithm=\count191
+)
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/algorithmicx\algps
+eudocode.sty"
+Package: algpseudocode 
+
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/algorithmicx\algor
+ithmicx.sty"
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count192
+\c@ALG@rem=\count193
+\c@ALG@nested=\count194
+\ALG@tlm=\skip52
+\ALG@thistlm=\skip53
+\c@ALG@Lnr=\count195
+\c@ALG@blocknr=\count196
+\c@ALG@storecount=\count197
+\c@ALG@tmpcounter=\count198
+\ALG@tmplength=\skip54
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+)
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.
+sty"
+\lst@mode=\count199
+\lst@gtempboxa=\box49
+\lst@token=\toks26
+\lst@length=\count266
+\lst@currlwidth=\dimen146
+\lst@column=\count267
+\lst@pos=\count268
+\lst@lostspace=\dimen147
+\lst@width=\dimen148
+\lst@newlines=\count269
+\lst@lineno=\count270
+\lst@maxwidth=\dimen149
+
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.s
+ty"
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count271
+\lst@skipnumbers=\count272
+\lst@framebox=\box50
+)
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.
+cfg"
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lstaddons\lstautog
+obble.sty"
+Package: lstautogobble 2012/05/03 v0.1 Implements 'autogobble' option for 'list
+ings'
+\lstag@spacecount=\count273
+)
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.
+sty"
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/stmaryrd\stmaryrd.
+sty"
+Package: stmaryrd 1994/03/03 St Mary's Road symbol package
+\symstmry=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
+(Font)                  U/stmry/m/n --> U/stmry/b/n on input line 89.
+)
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backen
+d-pdfmode.def"
+File: l3backend-pdfmode.def 2020-08-07 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count274
+\l__pdf_internal_box=\box51
+) (document.aux)
+\openout1 = `document.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-p
+df.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count275
+\scratchdimen=\dimen150
+\scratchbox=\box52
+\nofMPsegments=\count276
+\nofMParguments=\count277
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count278
+\MPscratchDim=\dimen151
+\MPnumerator=\count279
+\makeMPintoPDFobject=\count280
+\everyMPtoPDFconversion=\toks28
+)
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epsto
+pdf-base.sty"
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+)
+\c@lstlisting=\count281
+LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
+
+
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
+
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 2
+7.
+("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/stmaryrd\ustmry.fd
+")
+Overfull \hbox (15.89552pt too wide) in paragraph at lines 45--46
+[]\T1/cmr/m/it/10 Folgende Kon-struk-tion ist selbst wieder
+ []
+
+[1
+
+{C:/Users/jonas/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+Overfull \hbox (9.48564pt too wide) in paragraph at lines 129--130
+[]\T1/cmr/m/it/10 Sei $\OML/cmm/m/it/10 E \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 P
+\OT1/cmr/m/n/10 (
+)$ \T1/cmr/m/it/10 schnittsta-
+ []
+
+
+Overfull \hbox (2.71333pt too wide) in paragraph at lines 135--136
+[]\T1/cmr/m/it/10 Die Maÿer-weiterung für den Flächen-
+ []
+
+
+Overfull \hbox (5.16064pt too wide) in paragraph at lines 143--144
+[]\T1/cmr/m/it/10 Sei $\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10  \U/msb/m/n/10 R[]$
+\T1/cmr/m/it/10 , A ist Lebesgue-
+ []
+
+
+Overfull \hbox (20.32355pt too wide) in paragraph at lines 147--148
+[]\T1/cmr/m/it/10 Für eine mess-bare Ab-bil-dung $\OML/cmm/m/it/10 f \OT1/cmr/m
+/n/10 : (
+\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 A\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 !
+ []
+
+[3] [4]
+Overfull \hbox (12.10712pt too wide) in paragraph at lines 210--211
+[]\T1/cmr/m/it/10 Sei $\OML/cmm/m/it/10 f$ \T1/cmr/m/it/10 eine ein-
+ []
+
+
+Overfull \hbox (11.92377pt too wide) in paragraph at lines 214--215
+[]\T1/cmr/m/it/10 Sei
+ []
+
+
+Overfull \hbox (2.49936pt too wide) in paragraph at lines 218--219
+[]\T1/cmr/m/it/10 Es gilt für jede pos-i-tive mess-bare Funk-
+ []
+
+[5]
+Overfull \hbox (3.02777pt too wide) in paragraph at lines 252--253
+\T1/cmr/m/it/10 eine Folge mess-barer Funk-tio-nen, die punk-tweise f.ü. gegen 
+$\OML/cmm/m/it/10 f$ \T1/cmr/m/it/10 kon-vergiert. Weiter
+ []
+
+
+Overfull \hbox (0.35817pt too wide) in paragraph at lines 266--267
+[]\T1/cmr/m/it/10 Eine Funk-tion $\OML/cmm/m/it/10 F$ \T1/cmr/m/it/10 ist genau
+ dann darstell-bar als: $\OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\
+OT1/cmr/m/n/10 ) = [][] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\O
+T1/cmr/m/n/10 )\OML/cmm/m/it/10 dt$
+ []
+
+[6] [7] [8]
+Overfull \hbox (10.6738pt too wide) in paragraph at lines 374--375
+[]\T1/cmr/m/it/10 Wir definieren das Pro-duk-t-maÿ auf $\OT1/cmr/m/n/10 (\OML/c
+mm/m/it/10 X[] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 X[]; \OMS/cmsy/m/n/10 A[] 
+
+ []
+
+
+Overfull \hbox (5.87967pt too wide) detected at line 389
+[][] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; x\OT1/cmr/m/n/10 )\
+OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 = [][]([][] \OML/cmm/m/it/10 f\OT1/cmr/m/n/1
+0 (\OML/cmm/m/it/10 x[]; x[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx[]\OT1/cmr/m/n/
+10 )\OML/cmm/m/it/10 dx[] \OT1/cmr/m/n/10 = [][]([][] \OML/cmm/m/it/10 f\OT1/cm
+r/m/n/10 (\OML/cmm/m/it/10 x[]; x[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx[]\OT1/c
+mr/m/n/10 )\OML/cmm/m/it/10 dx[]
+ []
+
+[9]
+Overfull \hbox (23.82753pt too wide) in paragraph at lines 405--406
+[]\T1/cmr/m/n/10 Polarkoordinaten in der Ebene $\OT1/cmr/m/n/10  : (0\OML/cmm/
+m/it/10 ; \OMS/cmsy/m/n/10 1\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \OT1/cmr/m/n/1
+0 (\OMS/cmsy/m/n/10  \OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ! 
+\U/msb/m/n/10 R[]\OML/cmm/m/it/10 ; r;  \OMS/cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\
+OML/cmm/m/it/10 r [] ; r [] \OT1/cmr/m/n/10 )$\T1/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (4.6315pt too wide) in paragraph at lines 412--413
+[]\T1/cmr/m/it/10 Sei $\OML/cmm/m/it/10 $ \T1/cmr/m/it/10 ein Wahrschein-lichk
+eits-maÿ.
+ []
+
+
+Overfull \hbox (0.17296pt too wide) in paragraph at lines 428--429
+[]\T1/cmr/m/it/10 Sei $\OML/cmm/m/it/10 f \OMS/cmsy/m/n/10 2 L[]\OT1/cmr/m/n/10
+ (\U/msb/m/n/10 R[]\OT1/cmr/m/n/10 )$ \T1/cmr/m/it/10 und $\OML/cmm/m/it/10 $ 
+\T1/cmr/m/it/10 ein Mol-li-fier dann gilt für $\OML/cmm/m/it/10 [] \OT1/cmr/m/
+n/10 := \OML/cmm/m/it/10 []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x=\OT1/cmr/m/n/
+10 )$\T1/cmr/m/it/10 : 
+ []
+
+[10] [11] (document.aux) ) 
+Here is how much of TeX's memory you used:
+ 4788 strings out of 481178
+ 64750 string characters out of 2902469
+ 496118 words of memory out of 3000000
+ 20334 multiletter control sequences out of 15000+200000
+ 551414 words of font info for 78 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 36i,9n,40p,337b,222s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\jonas\AppData\Local\MiKTeX\2.9\fonts/pk/lj
+four/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\jonas\AppData\Local\MiKTeX\2.9\f
+onts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\jonas\AppData\Local\Mi
+KTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\jonas\AppDat
+a\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\jo
+nas\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C
+:\Users\jonas\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1
+200.pk> <C:\Users\jonas\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dp
+i600\ecrm1728.pk><C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmex10.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jonas/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/jonas/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/j
+onas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb
+><C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr10.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr5.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jonas/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/jonas/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
+C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/sy
+mbols/msbm7.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/hoekwater/stmary10.pfb>
+Output written on document.pdf (11 pages, 242544 bytes).
+PDF statistics:
+ 361 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
