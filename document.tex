@@ -253,7 +253,7 @@
 	$$\lim\int_\Omega f_j d\mu = \int_\Omega f d\mu$$
 \end{theorem}
 \begin{theorem}
-	Ist $f: (a, b) \to \mathbb{R}$ differenzierbar dann gilt: $f(b) - f(a) = \int_{a}^{b}f'(x)dx$
+	Ist $f: (a, b) \to \mathbb{R}$ differenzierbar und $f'$ beschränkt dann gilt: $f(b) - f(a) = \int_{a}^{b}f'(x)dx$
 \end{theorem}
 \begin{theorem}
 	Auf einem kompakten Intervall ist jede regelintegrierbare Funktion auch Lebesgue-integrierbar
@@ -446,5 +446,156 @@ Einige nützliche Transformationen:
 \end{theorem}
 \begin{theorem}[Lusin]
 	Sei $\mu$ ein endliches Maß und $f \Omega \to \mathbb{R}$ integrierbar dann gibt es zu jedem $\epsilon > 0$ eine kompakte Menge $K$ mit $\mu(\Omega\\K) < \epsilon$ sodass $f|_K$ stetig ist.  
+\end{theorem}
+\section{Hilberträume}
+\begin{definition}[Skalarprodukt]
+	Eine Abbildung $\langle. , . \rangle : H \times H \to \mathbb{K}$ heißt Skalarprodukt falls sie die folgenden Eigenschaften erfüllt:
+	\begin{itemize}
+		\item Positiv Definit: $\langle x, x\rangle > 0$ für $x\neq 0$.
+		\item Hermitesch: $\langle x, y\rangle = \overline{\langle y, x \rangle}$
+		\item Sesquilinear: $\langle x, \alpha y + \beta z\rangle = \alpha\langle x, y \rangle + \beta \langle x, z\rangle$
+	\end{itemize}
+	Das Skalarprodukt induziert eine Norm: $\Vert x\Vert = \sqrt{\langle x, x, \rangle}$. Ist $H$ unter dieser Norm vollständig so heißt $H$ Hilbertraum. 
+\end{definition}
+\begin{theorem}[Parallelogrammgleichung]
+	Für die von einem Skalarprodukt definierte Norm gilt:
+	$$\Vert x+ y \Vert^2 +\Vert x-y\Vert^2 = 2(\Vert x\Vert ^2 + \Vert y \Vert^2)$$
+\end{theorem}
+\begin{theorem}[Projektionssatz]
+	Sei $K \subset X$ eine konvexe, abgleschlossene, nichtleere Teilmenge des Hilbertaum $X$. Dann gibt es zu jedem $x\in X$ genau ein $y\in K$, sodass:
+	$$\Vert x-y\Vert = \inf_{z\in K}\Vert z - x \Vert$$
+	Die Abbildung $P_K: X\to K, x\mapsto y$ heißt Projektion.
+\end{theorem}
+\begin{theorem}[Variationsungleichung]
+	Sei $K \subset X$ eine konvexe, abgleschlossene, nichtleere Teilmenge des Hilbertaum $X$. Die Projektion $y=P_Kx$ wird charakterisiert durch:
+	$$\Re(\langle x-y, z-y\rangle)\leq 0 \forall z \in K$$
+	Ist $K$ ein abgeschlossener Unterraum, dann vereinfacht sich dies zu:
+	$$\langle x-y, z \rangle = 0 \forall z \in K$$
+\end{theorem}
+\begin{theorem}[Projektionssatz für Unterräume]
+	Sei $U$ Untervektorraum des Hilbertraum $H$. Es gilt:
+	$$P_{U^\perp} = Id - P_U$$
+	Wenn $U \neq \{0\}$ dann ist: $\Vert P_U\Vert = 1$
+\end{theorem}
+\begin{theorem}
+	Es gilt:
+	$$Y^{\perp\perp} = \overline{\text{span}Y}$$
+\end{theorem}
+\begin{theorem}[Darstellungssatz von Riesz]
+	Für jedes Funktional $x^*\in X^*$ existiert ein $x\in X$, sodass:
+	$$x^*(y) = \langle x, y\rangle$$ 
+	Die Abbildung $J: X \to X^*$ ist bijektiv isometrisch und konjugiert linear.
+\end{theorem}
+\begin{theorem}
+	Die abgeschlossene Einheitskugel ist genau dann kompakt, wenn der Raum endlichdimensional ist.
+\end{theorem}
+\begin{definition}[Orthonormalbasis]
+	Eine Menge $S = \subset X$ heißt Orthonormalsystem, falls $\Vert e\Vert = 1 \forall e \in S$ und $e\perp f\forall e\neq f \in S$. $S$ heißt Orthonormalbasis, falls es kein Orthonormal System $\tilde{S}$ mit $S\subsetneq \tilde{S}$ gibt.
+\end{definition}
+\begin{theorem}[Existenz einer Basis und Basiserweiterung]
+	Jeder nichttriviale Hilbertraum hat eine Orthonormalbasis. Zu jedem Orthonormalsystem $S$ gibt es eine Orthonormalbasis $\tilde{S}$ mit $S \subset \tilde{S}$.
+\end{theorem}
+\begin{definition}[Separabilität]
+	Ein Banachraum $X$ heißt separabel, wenn es eine abzählbare Teilmenge $D$ gibt, sodass: $\overline{D} = X$.
+\end{definition}
+\begin{theorem}
+	In einem separablen Hilbertraum ist jede Orthonormalbasis abzählbar.
+\end{theorem}
+\begin{theorem}
+	Sei $X$ Hilbertraum und $S\subset X$ Orthonormalsystem und $\{e_1, ..., e_n\}\subset S$, und $U = \text{span}\{e_1, ..., e_n\}$. Dann ist:
+	$$P_U(x)= \sum_{j=1}^n\langle x, e_j\rangle e_j$$
+	Außerdem gilt die Bessel'sche Ungleichung:
+	$$\sum_{j=1}^{n}|\langle x, e_j\rangle|^2 \leq \Vert x\Vert^2$$
+\end{theorem}
+\begin{theorem}
+	Sei $S= \{e_j, j \in\mathbb{N} \}\subset X$ ein Orthonormalsystem. Es ist Äquivalent:
+	\begin{itemize}
+		\item $S$ ist eine Orthonormalbasis
+		\item $S^\perp =\{0\}$
+		\item $\overline{\text{span}S} = X$
+		\item Für alle $x \in X$ gilt:
+		$$x =\sum_{j=1}^{\infty}\langle x, e_j \rangle e_j$$
+		\item Es gilt die Pasevalsche Gleichung:
+		$$\Vert x\Vert^2 = \sum_{j=1}^{n}|\langle x, e_j\rangle|^2 $$
+	\end{itemize}
+\end{theorem}
+\begin{theorem}[Eindeutigkeit der stetigen Fortsetzung]
+	Sei $X$ normiert und $Y$ Banach, sowie $U\subset X$ ein dichter Unterraum und $S:  U\to Y$ linear und stetig. Dann gibt es eine eindeutige Abbildung $T: X \to Y$, sodass $T|_U = S$ und $\Vert S\Vert =\Vert T\Vert$
+\end{theorem}
+\begin{theorem}
+	Jeder separable Hilbertraum ist isometrisch isomorph zu $l^2(\mathbb{K})$.
+\end{theorem}
+\section{Fourier-Analysis}
+\begin{definition}[Trigonometrisches Polynom]
+	Eine Funktion der Form:
+	$$x \mapsto \sum_{k=-N}^{N}c_ke^{ikx}$$
+	heißt trigonometrisches Polynom vom Grad $N$.\\
+	Man kann sie auch in der Reellen Form darstellen als:
+	$$x \mapsto \frac{a_0}{2} + \sum_{k=1}^{N} a_k \cos(kx)+b_k\sin(kx)$$
+	Mit $$a_0 = wc_0, a_k = c_k +c_{-k}, b_k = i(c_k -c_{-k})$$.
+	Die Umformung in die andere Richtung funktioniert mit:
+	$$c_0 = a_0/2, c_k = (a_K -ib_k)/2, c_{-k} = (a_k +ib_k)/2$$
+\end{definition}
+\begin{theorem}
+	Für ein trigonometrisches Polynom $t: I \to \mathbb{C}$ ist äquivalent:
+	\begin{itemize}
+		\item $t$ ist reellwertig
+		\item $c_k = \overline{c_{-k}}$
+		\item $a_k, b_k\in \mathbb{R}$
+	\end{itemize}
+\end{theorem}
+\begin{definition}
+	Sei $f: (-\pi, \pi) \to \mathbb{C}$ integrierbar. Dann sei:
+	$$\hat{f}(k) := \frac{1}{\sqrt{2\pi}}\int_{-\pi}^{\pi}e^{-ikx}f(x)dx$$
+	der $k$-te Fourierkoeffizient,
+	$$(S_Nf)(x) = \frac{1}{\sqrt{2\pi}}\sum_{k=-N}^{N}\hat{f}(k)e^{ikx}$$
+	das $N$-te Fourier Polynom und
+	$$(S_\infty f)(x) = \frac{1}{\sqrt{2\pi}}\sum_{k=-\infty}^{\infty}\hat{f}(k)e^{ikx}$$
+	die Fourierreihe.
+\end{definition}
+\begin{theorem}
+	Die trigonometrischen Polynome liegen dicht in $L^p((-\pi, \pi))$. In $L^2$ ist $S:= \{\frac{1}{\sqrt{2}}e^{ikx}| k \in \mathbb{Z}\}$ eine Orthonormalbasis.
+\end{theorem}
+\begin{definition}[Dirichlet-Kern]
+	Wir definieren den Dirchletkern als:
+	$$D_N(x) = \frac{1}{2\pi}\sum_{k=-N}^{N}e^{ikx}$$
+	Es gilt $S_Nf = (f\star D_N)$.
+	Außerdem ist:
+	$$D_N(x) = \begin{cases}
+		\frac{1}{2\pi}(2N+1) & \text{falls } x= 2k\pi\\
+		\frac{1}{2\pi}\frac{\sin((2N+1)x/2)}{x/2} & \text{andernfalls}
+	\end{cases}$$
+\end{definition}
+\begin{theorem}[Riemann-Lebesgue]
+	Für reelles $f\in L^((-\pi, \pi))$ gilt:
+	$$\lim_{N\to\infty}\hat{f}(N) =0$$
+	Weiter ist:
+	$$\lim_{N\to\infty}\hat{f}(N)\int_{-\pi}^\pi f(x) \cos(Nx)dx= 0$$
+	sowie
+	$$\lim_{N\to\infty}\hat{f}(N)\int_{-\pi}^\pi f(x) \sin(Nx)dx= 0$$
+\end{theorem}
+\begin{theorem}[Punktweise Konvergenz der Fourierreihe]
+	Sei $f\in L^1((-\pi, \pi))$ und besitze im Punkt $x$ links- und rechsseitige Ableitung, dann gilt:
+	$$\lim_{N\to\infty}(S_Nf)(x) = \frac{f(x+)- f(x-)}{2}$$
+\end{theorem}
+\begin{definition}
+	Man betrachtet auch das arithmetische Mittel der Fourierreihen:
+	$$(\Sigma_Nf)(x) = \frac{1}{N}\sum_{K=0}^{N}(S_Kf)(x)$$
+	Dies lässt sich mit dem Fejer-Kern darstellen:
+	$$K_N = \frac{1}{N}\sum_{j=0}^{N}D_j$$
+	$$\Sigma_Nf = (f\star K_N)$$
+\end{definition}
+\begin{theorem}
+	Der Fejer Kern hat folgende Darstellung:
+		$$K_N(x) =
+			\frac{1}{2\pi N}(\frac{\sin(\frac{N}{2}x)}{\sin(x/2)})^2 $$
+\end{theorem}
+\begin{theorem}
+	Sei $f\in C[-\pi, \pi]$ mit $f(-\pi) = f(\pi)$. Dann gilt: 
+	$$\Vert \Sigma_Nf - f\Vert_\infty \to 0$$
+\end{theorem}
+\begin{theorem}
+	$S_N f$ ist die Bestapproximation von $f$ auf den Raum der trigonometrischen Funktionen vom Grad maximal $f$ im $L^2$-Sinn. Es gilt:
+	$$\Vert f - S_Nf\Vert_2^2  = \Vert f\Vert_2^2 -\sum_{k=-N}^{N}|\langle e_k, f\rangle|^2 $$
 \end{theorem}
 \end{document}

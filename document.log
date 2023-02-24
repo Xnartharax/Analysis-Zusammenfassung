@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.11)  23 FEB 2023 13:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.11)  24 FEB 2023 12:07
 entering extended mode
 **./document.tex
 (document.tex
@@ -385,7 +385,44 @@ n/10 := \OML/cmm/m/it/10 []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x=\OT1/cmr/m/n/
 10 )$\T1/cmr/m/it/10 : 
  []
 
-[10] [11] (document.aux) ) 
+[10]
+Overfull \hbox (22.33858pt too wide) in paragraph at lines 470--471
+[]\T1/cmr/m/it/10 Sei $\OML/cmm/m/it/10 K \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 X
+$ \T1/cmr/m/it/10 eine kon-vexe, ab-gleschlossene,
+ []
+
+[11]
+Overfull \hbox (16.99016pt too wide) in paragraph at lines 502--503
+[]\T1/cmr/m/it/10 In einem sep-a-ra-blen Hilber-traum ist jede Or-thonor-mal-ba
+-sis abzählbar. 
+ []
+
+
+Overfull \hbox (15.84734pt too wide) in paragraph at lines 505--506
+[]\T1/cmr/m/it/10 Sei $\OML/cmm/m/it/10 X$ \T1/cmr/m/it/10 Hilber-traum und $\O
+ML/cmm/m/it/10 S \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 X$ \T1/cmr/m/it/10 Or-thon
+or-mal-sys-tem und $\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 e[]; :::; e[]\OMS/cmsy/m
+/n/10 g 
+ []
+
+
+Overfull \hbox (11.18304pt too wide) in paragraph at lines 523--524
+[]\T1/cmr/m/it/10 Sei $\OML/cmm/m/it/10 X$ \T1/cmr/m/it/10 normiert und
+ []
+
+[12] [13]
+Overfull \hbox (23.28798pt too wide) in paragraph at lines 578--579
+[]\T1/cmr/m/it/10 Sei $\OML/cmm/m/it/10 f \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 L
+[]\OT1/cmr/m/n/10 ((\OMS/cmsy/m/n/10  \OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 ))$
+ []
+
+
+Overfull \hbox (38.06924pt too wide) in paragraph at lines 598--599
+[]$\OML/cmm/m/it/10 S[]f$ \T1/cmr/m/it/10 ist die Bestap-prox-i-ma-tion von $\O
+ML/cmm/m/it/10 f$ \T1/cmr/m/it/10 auf den Raum der trigonometrischen
+ []
+
+[14] (document.aux) ) 
 Here is how much of TeX's memory you used:
  4788 strings out of 481178
  64750 string characters out of 2902469
@@ -394,33 +431,34 @@ Here is how much of TeX's memory you used:
  551414 words of font info for 78 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,9n,40p,337b,222s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\jonas\AppData\Local\MiKTeX\2.9\fonts/pk/lj
-four/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\jonas\AppData\Local\MiKTeX\2.9\f
-onts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\jonas\AppData\Local\Mi
-KTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\jonas\AppDat
-a\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\jo
-nas\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C
-:\Users\jonas\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1
-200.pk> <C:\Users\jonas\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dp
-i600\ecrm1728.pk><C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmex10.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jonas/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/jonas/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/j
-onas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb
-><C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr10.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmr5.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jonas/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/jonas/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
-C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/sy
-mbols/msbm7.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/hoekwater/stmary10.pfb>
-Output written on document.pdf (11 pages, 242544 bytes).
+ <C:\Users\jonas\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/
+jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\jonas\AppData\Local\MiKTeX\2.9\fonts/
+pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\jonas\AppData\Local\MiKTeX\
+2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\jonas\AppData\Loc
+al\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\jonas\A
+ppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Use
+rs\jonas\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.p
+k> <C:\Users\jonas\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
+ecrm1728.pk><C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmex10.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jonas/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/jonas/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/jonas/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/
+Users/jonas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r10.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmr5.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmr7.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jonas/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/jonas/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/jo
+nas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm1
+0.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
+onts/symbols/msbm7.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/hoekwater/stmary10.pfb>
+Output written on document.pdf (14 pages, 272893 bytes).
 PDF statistics:
- 361 PDF objects out of 1000 (max. 8388607)
+ 387 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
