@@ -598,4 +598,102 @@ Einige nützliche Transformationen:
 	$S_N f$ ist die Bestapproximation von $f$ auf den Raum der trigonometrischen Funktionen vom Grad maximal $f$ im $L^2$-Sinn. Es gilt:
 	$$\Vert f - S_Nf\Vert_2^2  = \Vert f\Vert_2^2 -\sum_{k=-N}^{N}|\langle e_k, f\rangle|^2 $$
 \end{theorem}
+\section{Kurvenintegral}
+\begin{definition}[Kurvenintegral]
+	Sei $F: \Omega \to mathbb{R}^n$ und $\gamma: [a, b] \to \Omega$ stetig differenzierbar, dann definiert man das Kurvenintegral über:
+	$$\int_{S(\gamma)}Fd\gamma = \int_{a}^{b}\langle F(\gamma(t)), \gamma'(t)\rangle dt$$
+\end{definition}
+\begin{theorem}
+	Für differenzierbare Skalarfelder $f: \Omega \to \mathbb{R}$ gilt:
+	$$\int_{S(\gamma)}\nabla f d\gamma = f(\gamma(b))-f(\gamma(a))$$
+\end{theorem}
+\begin{theorem}[Integrabilitätsbedingung]
+	Für ein Gradientenfeld $F=\nabla f, f\in C^2$ gilt:
+	$$\partial_jF_i(x) = \partial_iF_j(x)$$
+\end{theorem}
+\begin{definition}[sternförmig]
+	Eine Menge $Y$ heißt sternförmig, falls es einen Punkt $x\in Y$ gibt, sodass $[x, y]\subset Y, \ \forall y\in Y$.
+\end{definition}
+\begin{theorem}[Poincaré]
+	Auf einem sternförmigen offenen Gebiet $\Omega$ ist für $F:\Omega \to \mathbb{R}^n$ äquivalent:
+	\begin{itemize}
+		\item Die Integrabilitätsbedingung ist erfüllt für $F$.
+		\item $F$ ist ein Gradientenfeld
+	\end{itemize}
+\end{theorem}
+\begin{definition}[Wegzusammenhang]
+	Ein Raum $X$ heißt wegzusammendhängend, wenn es für alle $x, y\in X$ eine Kurve$\gamma:[0, 1]\to X$ gibt mit:
+	$$\gamma(0)=x, \gamma(1)=y$$
+\end{definition}
+\begin{definition}[konservatives Vektorfeld]
+	Ein Vektorfeld $F$ heißt konservativ, falls für alle Kurven $\gamma_1, \gamma_2$ gilt:
+	$$\int_{S(\gamma_1)}Fd\gamma_1 = \int_{S(\gamma_2)}Fd\gamma_2$$
+\end{definition}
+\begin{theorem}
+	Auf einem wegzusammenhängend $\Omega$ ist $F: \Omega \to \mathbb{R}^n$ genau dann ein Gradientenfeld, wenn es konservativ ist.
+\end{theorem}
+\section{Oberflächenintegral}
+\begin{definition}[$C^\infty$-Zerlegung der $1$]
+	Sei $K\subset \mathbb{R}^n$ und $\mathcal{U} = (O_j)_{j\in [n]}$ eine offene Überdeckung eine Familie $\alpha_j\in C^\infty(\mathbb{R}^n)$ heißt $C^\infty$-Zerlegung der $1$, wenn:
+	$$0\leq\alpha_j\leq 1$$
+	$$\text{supp}(\alpha_j) \subset O_j$$
+	$$\sum_{j=1}^n\alpha_j = 1$$
+	Für jede kompakte Teilmenge existiert eine offene Überdeckung mit passender $C^\infty$-Zerlegung.
+\end{definition}
+\begin{definition}[Maßtensor]
+	Sei $M\subset\mathbb{R}^n$ eine $k$-dimensionale $C^1$ Mannigfaltigkeit und $\psi: U\to O$ eine Parametrisierung. Wir definieren:
+	$$G_\psi(u) = J_\psi(u)^TJ_\psi(u), g_\psi(u) = \det G_\psi(u)$$ 
+\end{definition}
+\begin{definition}
+	Das Integral über die Oberfläche von $M$ für eine Parametrisierung $\psi: U\to O$ ist definiert als:
+	$$\int_Of(\xi)dS(\xi) = \int_Uf(\psi(u))\sqrt{g_\psi(u)}du$$
+	Das Integral über das gesamte $M$ ist definiert mit hilfe einer Zerlegung der 1:
+	$$\int_Mf(\xi)dS(\xi) = \sum_{j=1}^{N} \int_{O_j}\alpha_j(\xi)f(\xi)dS(\xi)$$
+\end{definition}
+\section{Sätze von Gauß, Green und Stokes}
+\begin{theorem}[Satz von Gauß]
+	Sei $\Omega$ offen und beschränkt mit $C^1$-Rand und $\overline{\Omega} \subset V$. Sei $F:V \to \mathbb{R}\in C^1$, dann ist:
+	$$\int_\Omega \text{div} F(x)d\lambda^n(x) = \int_{\partial\Omega}\langle F(\xi), \nu(\xi)\rangle dS(\xi)$$
+	Wobei $\nu(\xi)$ der nach außen zeigende Normalenvektor an $\xi$ sei.
+\end{theorem}
+\begin{theorem}[Erste Greensche Formel]
+	Sei $f\in C^1, g\in C^2$:
+	$$\int_{\Omega}f(x)\Delta g(x)= -\int_\Omega \langle\nabla f(x), \nabla g(x)\rangle d\lambda^n(x) + \int_{\partial\Omega}f(\xi)\partial_\nu g(\xi)dS(\xi)$$
+	Wobei $\partial_\nu g(\xi) = \langle \nabla g(\xi), \nu(\xi)\rangle$.
+\end{theorem}
+\begin{theorem}[Zweite Greensche Formel]
+	Sei $f\in C^1, g\in C^2$:
+	$$\int_{\Omega}\Delta g(x) d\lambda^n(x) = \int_{\partial\Omega}\partial_\nu g(\xi)dS(\xi)$$
+	Ist außerdem $f\in C^2$:
+	$$\int_{\Omega}(f \Delta g-g \Delta f)(x) \mathrm{d} \lambda^n(x)=\int_{\partial \Omega}\left(f \partial_\nu g-g \partial_\nu f\right)(\xi) \mathrm{d} S(\xi)$$
+\end{theorem}
+\begin{theorem}
+	$$\text{div} F(x) = \lim_{\epsilon \to 0}\frac{1}{\text{vol}(B(x, \epsilon))}\int_{\deltaB(x,\epsilon)} \langle F(\xi), \nu(\xi)\rangle dS(\xi)$$
+\end{theorem}
+\begin{theorem}[Stokes in $\mathbb{R}^2$]
+	Sei $\Omega \subset \mathbb{R}^2$ offen mit $C^1$-Rand welcher von $\psi$ im mathematisch positiven sinn durchlaufen wird. Dann gilt:
+	$$\int_{S(\psi)} F(x) d\psi = \int_\Omega \partial_1 F_2 -\partial_2F_1$$
+\end{theorem}
+\begin{theorem}[Stokes in $\mathbb{R}^3$]
+	Sei $O \subset \mathbb{R}^3$  eine 2-dimensionale $C^1$-Mannigfaltigkeit mit $C^1$-Rand welcher im mathematisch positiven Sinn von $\gamma$ durchlaufen wird. Dann gilt:
+	$$\int_{\partial O} F(x) d\gamma = \int_\Omega \langle \text{rot}F(\xi), \nu(\xi)\rangle dS(\xi)$$
+\end{theorem}
+\begin{definition}
+	Seien $\mu$ und $\nu$ Maße. 
+	Dann ist $\nu$ absolutstetig bzgl. $\mu$ ($\nu << \mu$), wenn $$\mu(A) = = \Rightarrow \nu(A)= 0$$
+	Gilt die Umkehrung auch so heißen $\mu$ und $\nu$ äquivalent.\\
+	Das Maß $\mu$ heißt singulär zu $\nu$ ($\mu \perp \nu$), wenn ein $A$ existiert, sodass:
+	$$\mu(A) = 0 \land \nu(\Omega\\A) = 0$$
+\end{definition}
+\begin{theorem}[Zerlegungssatz von Lebesgue]
+	Seien $\mu$ und $\nu$ $\sigma$-endlich. Dann lässt sich $\nu$ auf eindeutige weise in einen absolutstetigen Teil $\nu_a$ und singulären Teil $\nu_s$ bezüglich $\mu$ zerlegen:
+	$$\nu = \nu_a + \nu_s$$
+\end{theorem}
+\begin{theorem}
+	Seien $\mu$ und $\nu$ $\sigma$-endlich, dann ist äquivalent:
+	\begin{itemize}
+		\item $\nu << \mu$
+		\item Es gibt eine Dichte $\rho: \Omega \to [0,\infty)$ mit $d\nu = \rho d\mu$.
+	\end{itemize}
+\end{theorem}
 \end{document}

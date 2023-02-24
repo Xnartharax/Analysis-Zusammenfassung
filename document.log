@@ -1,235 +1,186 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.11)  24 FEB 2023 12:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.30)  24 FEB 2023 17:56
 entering extended mode
-**./document.tex
-(document.tex
-LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-08-07>
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls"
-Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size10.clo"
-File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"c:/Users/jonas/Nextcloud/Documents/Uni/Analyisis 3/Zusammenfassung/document.tex"
+(c:/Users/jonas/Nextcloud/Documents/Uni/Analyisis 3/Zusammenfassung/document.tex
+LaTeX2e <2021-06-01> patch level 1
+L3 programming layer <2021-10-18> (c:/texlive/2021/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/02/12 v1.4n Standard LaTeX document class
+(c:/texlive/2021/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count168
-\c@section=\count169
-\c@subsection=\count170
-\c@subsubsection=\count171
-\c@paragraph=\count172
-\c@subparagraph=\count173
-\c@figure=\count174
-\c@table=\count175
+\c@part=\count182
+\c@section=\count183
+\c@subsection=\count184
+\c@subsubsection=\count185
+\c@paragraph=\count186
+\c@subparagraph=\count187
+\c@figure=\count188
+\c@table=\count189
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
-\bibindent=\dimen134
-) ("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.st
-y"
-Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks15
-\inpenc@posthook=\toks16
-) ("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.sty
-"
-Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
-)
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.st
-y"
-Package: amsmath 2020/01/20 v2.17e AMS math features
+\bibindent=\dimen138
+) (c:/texlive/2021/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+) (c:/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2021/04/20 v2.17j AMS math features
 \@mathmargin=\skip49
 
 For additional information on amsmath, use the `?' option.
-
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.st
-y"
+(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
-
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty
-"
+ (c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks17
-\ex@=\dimen135
-))
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty
-"
+\@emptytoks=\toks18
+\ex@=\dimen139
+)) (c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen136
-)
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty
-"
+\pmbraise@=\dimen140
+) (c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count176
-LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count177
-\leftroot@=\count178
-LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count179
-\DOTSCASE@=\count180
-LaTeX Info: Redefining \ldots on input line 486.
-LaTeX Info: Redefining \dots on input line 489.
-LaTeX Info: Redefining \cdots on input line 610.
-\Mathstrutbox@=\box45
-\strutbox@=\box46
-\big@size=\dimen137
-LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count181
-\c@MaxMatrixCols=\count182
+\inf@bad=\count190
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count191
+\leftroot@=\count192
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count193
+\DOTSCASE@=\count194
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box50
+\strutbox@=\box51
+\big@size=\dimen141
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count195
+\c@MaxMatrixCols=\count196
 \dotsspace@=\muskip16
-\c@parentequation=\count183
-\dspbrk@lvl=\count184
-\tag@help=\toks18
-\row@=\count185
-\column@=\count186
-\maxfields@=\count187
-\andhelp@=\toks19
-\eqnshift@=\dimen138
-\alignsep@=\dimen139
-\tagshift@=\dimen140
-\tagwidth@=\dimen141
-\totwidth@=\dimen142
-\lineht@=\dimen143
-\@envbody=\toks20
+\c@parentequation=\count197
+\dspbrk@lvl=\count198
+\tag@help=\toks19
+\row@=\count199
+\column@=\count266
+\maxfields@=\count267
+\andhelp@=\toks20
+\eqnshift@=\dimen142
+\alignsep@=\dimen143
+\tagshift@=\dimen144
+\tagwidth@=\dimen145
+\totwidth@=\dimen146
+\lineht@=\dimen147
+\@envbody=\toks21
 \multlinegap=\skip50
 \multlinetaggap=\skip51
-\mathdisplay@stack=\toks21
-LaTeX Info: Redefining \[ on input line 2859.
-LaTeX Info: Redefining \] on input line 2860.
-)
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssymb.s
-ty"
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+) (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.
-sty"
+ (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.
-sty"
-Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
-
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.st
-y"
+)) (c:/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
+ (c:/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks22
-)
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.
-sty"
-Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
-
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+\KV@toks@=\toks23
+) (c:/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+ (c:/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graph
-ics.cfg"
+) (c:/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 105.
-
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdfte
-x.def"
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (c:/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen144
-\Gin@req@width=\dimen145
+\Gin@req@height=\dimen148
+\Gin@req@width=\dimen149
 )
-\c@theorem=\count188
-\c@definition=\count189
-
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/algorithms\algorit
-hm.sty"
-Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
-nment
-
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty"
+\c@theorem=\count268
+\c@definition=\count269
+ (c:/texlive/2021/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
+ (c:/texlive/2021/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count190
-\float@exts=\toks23
-\float@box=\box47
-\@float@everytoks=\toks24
-\@floatcapt=\box48
+\c@float@type=\count270
+\float@exts=\toks24
+\float@box=\box52
+\@float@everytoks=\toks25
+\@floatcapt=\box53
+) (c:/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
 )
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty"
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-\@float@every@algorithm=\toks25
-\c@algorithm=\count191
-)
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/algorithmicx\algps
-eudocode.sty"
+\@float@every@algorithm=\toks26
+\c@algorithm=\count271
+) (c:/texlive/2021/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
-
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/algorithmicx\algor
-ithmicx.sty"
+ (c:/texlive/2021/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count192
-\c@ALG@rem=\count193
-\c@ALG@nested=\count194
+\c@ALG@line=\count272
+\c@ALG@rem=\count273
+\c@ALG@nested=\count274
 \ALG@tlm=\skip52
 \ALG@thistlm=\skip53
-\c@ALG@Lnr=\count195
-\c@ALG@blocknr=\count196
-\c@ALG@storecount=\count197
-\c@ALG@tmpcounter=\count198
+\c@ALG@Lnr=\count275
+\c@ALG@blocknr=\count276
+\c@ALG@storecount=\count277
+\c@ALG@tmpcounter=\count278
 \ALG@tmplength=\skip54
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-)
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.
-sty"
-\lst@mode=\count199
-\lst@gtempboxa=\box49
-\lst@token=\toks26
-\lst@length=\count266
-\lst@currlwidth=\dimen146
-\lst@column=\count267
-\lst@pos=\count268
-\lst@lostspace=\dimen147
-\lst@width=\dimen148
-\lst@newlines=\count269
-\lst@lineno=\count270
-\lst@maxwidth=\dimen149
-
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.s
-ty"
+) (c:/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count279
+\lst@gtempboxa=\box54
+\lst@token=\toks27
+\lst@length=\count280
+\lst@currlwidth=\dimen150
+\lst@column=\count281
+\lst@pos=\count282
+\lst@lostspace=\dimen151
+\lst@width=\dimen152
+\lst@newlines=\count283
+\lst@lineno=\count284
+\lst@maxwidth=\dimen153
+ (c:/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count271
-\lst@skipnumbers=\count272
-\lst@framebox=\box50
-)
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.
-cfg"
+\c@lstnumber=\count285
+\lst@skipnumbers=\count286
+\lst@framebox=\box55
+) (c:/texlive/2021/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
-
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lstaddons\lstautog
-obble.sty"
-Package: lstautogobble 2012/05/03 v0.1 Implements 'autogobble' option for 'list
-ings'
-\lstag@spacecount=\count273
-)
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.
-sty"
+ (c:/texlive/2021/texmf-dist/tex/latex/lstaddons/lstautogobble.sty
+Package: lstautogobble 2012/05/03 v0.1 Implements 'autogobble' option for 'listings'
+\lstag@spacecount=\count287
+) (c:/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/stmaryrd\stmaryrd.
-sty"
+) (c:/texlive/2021/texmf-dist/tex/latex/stmaryrd/stmaryrd.sty
 Package: stmaryrd 1994/03/03 St Mary's Road symbol package
 \symstmry=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
 (Font)                  U/stmry/m/n --> U/stmry/b/n on input line 89.
-)
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backen
-d-pdfmode.def"
-File: l3backend-pdfmode.def 2020-08-07 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count274
-\l__pdf_internal_box=\box51
-) (document.aux)
+) (c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count288
+\l__pdf_internal_box=\box56
+) (./document.aux)
 \openout1 = `document.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -246,54 +197,45 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
-
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-p
-df.mkii"
+ (c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count275
-\scratchdimen=\dimen150
-\scratchbox=\box52
-\nofMPsegments=\count276
-\nofMParguments=\count277
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count278
-\MPscratchDim=\dimen151
-\MPnumerator=\count279
-\makeMPintoPDFobject=\count280
-\everyMPtoPDFconversion=\toks28
-)
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epsto
-pdf-base.sty"
+\scratchcounter=\count289
+\scratchdimen=\dimen154
+\scratchbox=\box57
+\nofMPsegments=\count290
+\nofMParguments=\count291
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count292
+\MPscratchDim=\dimen155
+\MPnumerator=\count293
+\makeMPintoPDFobject=\count294
+\everyMPtoPDFconversion=\toks29
+) (c:/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-)
-\c@lstlisting=\count281
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (c:/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+\c@lstlisting=\count295
 LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
-
-
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+ (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
-
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
+ (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 2
-7.
-("C:\Users\jonas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/stmaryrd\ustmry.fd
-")
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 27.
+ (c:/texlive/2021/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 Overfull \hbox (15.89552pt too wide) in paragraph at lines 45--46
 []\T1/cmr/m/it/10 Folgende Kon-struk-tion ist selbst wieder
  []
 
 [1
 
-{C:/Users/jonas/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
 Overfull \hbox (9.48564pt too wide) in paragraph at lines 129--130
-[]\T1/cmr/m/it/10 Sei $\OML/cmm/m/it/10 E \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 P
-\OT1/cmr/m/n/10 (
+[]\T1/cmr/m/it/10 Sei $\OML/cmm/m/it/10 E \OMS/cmsy/m/n/10 ^^Z \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (
 )$ \T1/cmr/m/it/10 schnittsta-
  []
 
@@ -304,14 +246,12 @@ Overfull \hbox (2.71333pt too wide) in paragraph at lines 135--136
 
 
 Overfull \hbox (5.16064pt too wide) in paragraph at lines 143--144
-[]\T1/cmr/m/it/10 Sei $\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10  \U/msb/m/n/10 R[]$
-\T1/cmr/m/it/10 , A ist Lebesgue-
+[]\T1/cmr/m/it/10 Sei $\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 ^^Z \U/msb/m/n/10 R[]$\T1/cmr/m/it/10 , A ist Lebesgue-
  []
 
 
 Overfull \hbox (20.32355pt too wide) in paragraph at lines 147--148
-[]\T1/cmr/m/it/10 Für eine mess-bare Ab-bil-dung $\OML/cmm/m/it/10 f \OT1/cmr/m
-/n/10 : (
+[]\T1/cmr/m/it/10 Für eine mess-bare Ab-bil-dung $\OML/cmm/m/it/10 f \OT1/cmr/m/n/10 : (
 \OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 A\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 !
  []
 
@@ -332,77 +272,53 @@ Overfull \hbox (2.49936pt too wide) in paragraph at lines 218--219
 
 [5]
 Overfull \hbox (3.02777pt too wide) in paragraph at lines 252--253
-\T1/cmr/m/it/10 eine Folge mess-barer Funk-tio-nen, die punk-tweise f.ü. gegen 
-$\OML/cmm/m/it/10 f$ \T1/cmr/m/it/10 kon-vergiert. Weiter
+\T1/cmr/m/it/10 eine Folge mess-barer Funk-tio-nen, die punk-tweise f.ü. gegen $\OML/cmm/m/it/10 f$ \T1/cmr/m/it/10 kon-vergiert. Weiter
  []
 
 
 Overfull \hbox (0.35817pt too wide) in paragraph at lines 266--267
-[]\T1/cmr/m/it/10 Eine Funk-tion $\OML/cmm/m/it/10 F$ \T1/cmr/m/it/10 ist genau
- dann darstell-bar als: $\OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\
-OT1/cmr/m/n/10 ) = [][] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\O
-T1/cmr/m/n/10 )\OML/cmm/m/it/10 dt$
+[]\T1/cmr/m/it/10 Eine Funk-tion $\OML/cmm/m/it/10 F$ \T1/cmr/m/it/10 ist genau dann darstell-bar als: $\OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = [][] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dt$
  []
 
 [6] [7] [8]
 Overfull \hbox (10.6738pt too wide) in paragraph at lines 374--375
-[]\T1/cmr/m/it/10 Wir definieren das Pro-duk-t-maÿ auf $\OT1/cmr/m/n/10 (\OML/c
-mm/m/it/10 X[] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 X[]; \OMS/cmsy/m/n/10 A[] 
+[]\T1/cmr/m/it/10 Wir definieren das Pro-duk-t-maÿ auf $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X[] \OMS/cmsy/m/n/10 ^^B \OML/cmm/m/it/10 X[]; \OMS/cmsy/m/n/10 A[] 
 
  []
 
 
 Overfull \hbox (5.87967pt too wide) detected at line 389
-[][] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; x\OT1/cmr/m/n/10 )\
-OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 = [][]([][] \OML/cmm/m/it/10 f\OT1/cmr/m/n/1
-0 (\OML/cmm/m/it/10 x[]; x[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx[]\OT1/cmr/m/n/
-10 )\OML/cmm/m/it/10 dx[] \OT1/cmr/m/n/10 = [][]([][] \OML/cmm/m/it/10 f\OT1/cm
-r/m/n/10 (\OML/cmm/m/it/10 x[]; x[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx[]\OT1/c
-mr/m/n/10 )\OML/cmm/m/it/10 dx[]
+[][] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 = [][]([][] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; x[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx[] \OT1/cmr/m/n/10 = [][]([][] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; x[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx[]
  []
 
 [9]
 Overfull \hbox (23.82753pt too wide) in paragraph at lines 405--406
-[]\T1/cmr/m/n/10 Polarkoordinaten in der Ebene $\OT1/cmr/m/n/10  : (0\OML/cmm/
-m/it/10 ; \OMS/cmsy/m/n/10 1\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  \OT1/cmr/m/n/1
-0 (\OMS/cmsy/m/n/10  \OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ! 
-\U/msb/m/n/10 R[]\OML/cmm/m/it/10 ; r;  \OMS/cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\
-OML/cmm/m/it/10 r [] ; r [] \OT1/cmr/m/n/10 )$\T1/cmr/m/n/10 ,
+[]\T1/cmr/m/n/10 Polarkoordinaten in der Ebene $\OT1/cmr/m/n/10 ^^H : (0\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 1\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^B \OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 ^^Y; ^^Y\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ! \U/msb/m/n/10 R[]\OML/cmm/m/it/10 ; r; ^^R \OMS/cmsy/m/n/10 7! \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 r [] ^^R; r [] ^^R\OT1/cmr/m/n/10 )$\T1/cmr/m/n/10 ,
  []
 
 
 Overfull \hbox (4.6315pt too wide) in paragraph at lines 412--413
-[]\T1/cmr/m/it/10 Sei $\OML/cmm/m/it/10 $ \T1/cmr/m/it/10 ein Wahrschein-lichk
-eits-maÿ.
+[]\T1/cmr/m/it/10 Sei $\OML/cmm/m/it/10 ^^V$ \T1/cmr/m/it/10 ein Wahrschein-lichkeits-maÿ.
  []
 
 
 Overfull \hbox (0.17296pt too wide) in paragraph at lines 428--429
-[]\T1/cmr/m/it/10 Sei $\OML/cmm/m/it/10 f \OMS/cmsy/m/n/10 2 L[]\OT1/cmr/m/n/10
- (\U/msb/m/n/10 R[]\OT1/cmr/m/n/10 )$ \T1/cmr/m/it/10 und $\OML/cmm/m/it/10 $ 
-\T1/cmr/m/it/10 ein Mol-li-fier dann gilt für $\OML/cmm/m/it/10 [] \OT1/cmr/m/
-n/10 := \OML/cmm/m/it/10 []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x=\OT1/cmr/m/n/
-10 )$\T1/cmr/m/it/10 : 
+[]\T1/cmr/m/it/10 Sei $\OML/cmm/m/it/10 f \OMS/cmsy/m/n/10 2 L[]\OT1/cmr/m/n/10 (\U/msb/m/n/10 R[]\OT1/cmr/m/n/10 )$ \T1/cmr/m/it/10 und $\OML/cmm/m/it/10 ^^^$ \T1/cmr/m/it/10 ein Mol-li-fier dann gilt für $\OML/cmm/m/it/10 ^^^[] \OT1/cmr/m/n/10 := \OML/cmm/m/it/10 ^^O[]^^^\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x=^^O\OT1/cmr/m/n/10 )$\T1/cmr/m/it/10 : 
  []
 
 [10]
 Overfull \hbox (22.33858pt too wide) in paragraph at lines 470--471
-[]\T1/cmr/m/it/10 Sei $\OML/cmm/m/it/10 K \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 X
-$ \T1/cmr/m/it/10 eine kon-vexe, ab-gleschlossene,
+[]\T1/cmr/m/it/10 Sei $\OML/cmm/m/it/10 K \OMS/cmsy/m/n/10 ^^Z \OML/cmm/m/it/10 X$ \T1/cmr/m/it/10 eine kon-vexe, ab-gleschlossene,
  []
 
 [11]
 Overfull \hbox (16.99016pt too wide) in paragraph at lines 502--503
-[]\T1/cmr/m/it/10 In einem sep-a-ra-blen Hilber-traum ist jede Or-thonor-mal-ba
--sis abzählbar. 
+[]\T1/cmr/m/it/10 In einem sep-a-ra-blen Hilber-traum ist jede Or-thonor-mal-ba-sis abzählbar. 
  []
 
 
 Overfull \hbox (15.84734pt too wide) in paragraph at lines 505--506
-[]\T1/cmr/m/it/10 Sei $\OML/cmm/m/it/10 X$ \T1/cmr/m/it/10 Hilber-traum und $\O
-ML/cmm/m/it/10 S \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 X$ \T1/cmr/m/it/10 Or-thon
-or-mal-sys-tem und $\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 e[]; :::; e[]\OMS/cmsy/m
-/n/10 g 
+[]\T1/cmr/m/it/10 Sei $\OML/cmm/m/it/10 X$ \T1/cmr/m/it/10 Hilber-traum und $\OML/cmm/m/it/10 S \OMS/cmsy/m/n/10 ^^Z \OML/cmm/m/it/10 X$ \T1/cmr/m/it/10 Or-thonor-mal-sys-tem und $\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 e[]; :::; e[]\OMS/cmsy/m/n/10 g ^^Z
  []
 
 
@@ -412,53 +328,63 @@ Overfull \hbox (11.18304pt too wide) in paragraph at lines 523--524
 
 [12] [13]
 Overfull \hbox (23.28798pt too wide) in paragraph at lines 578--579
-[]\T1/cmr/m/it/10 Sei $\OML/cmm/m/it/10 f \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 L
-[]\OT1/cmr/m/n/10 ((\OMS/cmsy/m/n/10  \OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 ))$
+[]\T1/cmr/m/it/10 Sei $\OML/cmm/m/it/10 f \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 L[]\OT1/cmr/m/n/10 ((\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 ^^Y; ^^Y\OT1/cmr/m/n/10 ))$
  []
 
 
 Overfull \hbox (38.06924pt too wide) in paragraph at lines 598--599
-[]$\OML/cmm/m/it/10 S[]f$ \T1/cmr/m/it/10 ist die Bestap-prox-i-ma-tion von $\O
-ML/cmm/m/it/10 f$ \T1/cmr/m/it/10 auf den Raum der trigonometrischen
+[]$\OML/cmm/m/it/10 S[]f$ \T1/cmr/m/it/10 ist die Bestap-prox-i-ma-tion von $\OML/cmm/m/it/10 f$ \T1/cmr/m/it/10 auf den Raum der trigonometrischen
  []
 
-[14] (document.aux) ) 
+[14]
+Overfull \hbox (12.22162pt too wide) in paragraph at lines 611--612
+[]\T1/cmr/m/it/10 Für ein Gra-di-en-ten-feld $\OML/cmm/m/it/10 F \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 r\OML/cmm/m/it/10 f; f \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (3.189pt too wide) in paragraph at lines 625--626
+[]\T1/cmr/m/it/10 Ein Raum $\OML/cmm/m/it/10 X$ \T1/cmr/m/it/10 heiÿt wegzusam-mend-hän-
+ []
+
+
+Overfull \hbox (6.97162pt too wide) in paragraph at lines 648--649
+[]\T1/cmr/m/it/10 Das In-te-gral über die Ober-fläche von $\OML/cmm/m/it/10 M$ \T1/cmr/m/it/10 für eine Parametrisierung
+ []
+
+[15]
+c:/Users/jonas/Nextcloud/Documents/Uni/Analyisis 3/Zusammenfassung/document.tex:671: Undefined control sequence.
+l.671 ...{\text{vol}(B(x, \epsilon))}\int_{\deltaB
+                                                  (x,\epsilon)} \langle F(\x...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.15906pt too wide) in paragraph at lines 678--679
+[]\T1/cmr/m/it/10 Sei $\OML/cmm/m/it/10 O \OMS/cmsy/m/n/10 ^^Z \U/msb/m/n/10 R[]$ \T1/cmr/m/it/10 eine 2-dimensionale $\OML/cmm/m/it/10 C[]$\T1/cmr/m/it/10 -Mannigfaltigkeit
+ []
+
+[16]
+Overfull \hbox (12.21616pt too wide) in paragraph at lines 689--690
+[]\T1/cmr/m/it/10 Seien $\OML/cmm/m/it/10 ^^V$ \T1/cmr/m/it/10 und $\OML/cmm/m/it/10 ^^W$ $^^[$\T1/cmr/m/it/10 -endlich. Dann
+ []
+
+[17] (./document.aux) ) 
 Here is how much of TeX's memory you used:
- 4788 strings out of 481178
- 64750 string characters out of 2902469
- 496118 words of memory out of 3000000
- 20334 multiletter control sequences out of 15000+200000
- 551414 words of font info for 78 fonts, out of 3000000 for 9000
+ 4937 strings out of 478579
+ 66588 string characters out of 5857457
+ 559285 words of memory out of 5000000
+ 22775 multiletter control sequences out of 15000+600000
+ 419756 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,9n,40p,337b,222s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\jonas\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/
-jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\jonas\AppData\Local\MiKTeX\2.9\fonts/
-pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\jonas\AppData\Local\MiKTeX\
-2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\jonas\AppData\Loc
-al\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\jonas\A
-ppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Use
-rs\jonas\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.p
-k> <C:\Users\jonas\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
-ecrm1728.pk><C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmex10.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jonas/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/jonas/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/jonas/
-AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/
-Users/jonas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-r10.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmr5.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmr7.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jonas/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/jonas/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/jo
-nas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm1
-0.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
-onts/symbols/msbm7.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/hoekwater/stmary10.pfb>
-Output written on document.pdf (14 pages, 272893 bytes).
+ 57i,9n,66p,417b,263s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/stmaryrd/stmary10.pfb>
+Output written on document.pdf (17 pages, 327924 bytes).
 PDF statistics:
- 387 PDF objects out of 1000 (max. 8388607)
+ 165 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
