@@ -442,10 +442,10 @@ Einige nützliche Transformationen:
 	$$\overline{C_c^\infty}^{\Vert . \Vert_p} = L^p$$
 \end{theorem}
 \begin{theorem}[Egorov]
-	Sei $\mu$ ein endliches Maß. Sei $f_j \to f$ fast überall so konvergiert $f_j$ fast gleichmäßig gegen $f$. D.h. zu jedem $\delta > 0$ existiert eine Menge $E$ mit $\mu(E) < \delta$, sodass $f_j|_{E^c} \to f|_{E^c}$ gleichmäßig.
+	Sei $\lambda(\omega)$ endlich. Sei $f_j \to f$ fast überall so konvergiert $f_j$ fast gleichmäßig gegen $f$. D.h. zu jedem $\delta > 0$ existiert eine Menge $E$ mit $\mu(E) < \delta$, sodass $f_j|_{E^c} \to f|_{E^c}$ gleichmäßig.
 \end{theorem}
 \begin{theorem}[Lusin]
-	Sei $\mu$ ein endliches Maß und $f \Omega \to \mathbb{R}$ integrierbar dann gibt es zu jedem $\epsilon > 0$ eine kompakte Menge $K$ mit $\mu(\Omega\\K) < \epsilon$ sodass $f|_K$ stetig ist.  
+	Sei $\lambda(\omega)$ endlich und $f \Omega \to \mathbb{R}$ integrierbar dann gibt es zu jedem $\epsilon > 0$ eine kompakte Menge $K$ mit $\mu(\Omega\\K) < \epsilon$ sodass $f|_K$ stetig ist.  
 \end{theorem}
 \section{Hilberträume}
 \begin{definition}[Skalarprodukt]
@@ -668,7 +668,7 @@ Einige nützliche Transformationen:
 	$$\int_{\Omega}(f \Delta g-g \Delta f)(x) \mathrm{d} \lambda^n(x)=\int_{\partial \Omega}\left(f \partial_\nu g-g \partial_\nu f\right)(\xi) \mathrm{d} S(\xi)$$
 \end{theorem}
 \begin{theorem}
-	$$\text{div} F(x) = \lim_{\epsilon \to 0}\frac{1}{\text{vol}(B(x, \epsilon))}\int_{\deltaB(x,\epsilon)} \langle F(\xi), \nu(\xi)\rangle dS(\xi)$$
+	$$\text{div} F(x) = \lim_{\epsilon \to 0}\frac{1}{\text{vol}(B(x, \epsilon))}\int_{\delta B(x,\epsilon)} \langle F(\xi), \nu(\xi)\rangle dS(\xi)$$
 \end{theorem}
 \begin{theorem}[Stokes in $\mathbb{R}^2$]
 	Sei $\Omega \subset \mathbb{R}^2$ offen mit $C^1$-Rand welcher von $\psi$ im mathematisch positiven sinn durchlaufen wird. Dann gilt:
