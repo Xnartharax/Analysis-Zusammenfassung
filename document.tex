@@ -144,11 +144,11 @@
 	$$\lambda^{n, *} (O_\epsilon\backslash A) < \epsilon$$
 \end{theorem}
 \begin{definition}[messbare Abbildung]
-	Für eine messbare Abbildung $f: (\Omega, \mathcal{A}) \to (\tilde{\Omega}, \tilde{\mathcal{A}})$ gilt: $^{-1}(A) \in \mathcal{A} \forall A \in \tilde{\mathcal{A}}$.
+	Für eine messbare Abbildung $f: (\Omega, \mathcal{A}) \to (\tilde{\Omega}, \tilde{\mathcal{A}})$ gilt: $f^{-1}(A) \in \mathcal{A} \forall A \in \tilde{\mathcal{A}}$.
 \end{definition}
 \begin{theorem}
 	Sei $f: (\Omega, \mathcal{A}) \to (\tilde{\Omega}, \tilde{\mathcal{A}})$ und $\mathcal{E}$ ein Erzeugendensystem von $\tilde{\mathcal{A}}$, dann ist $f$ bereits messbar falls gilt:
-	$$f^(E) \in \mathcal{A} \forall E \in \mathcal{E}$$
+	$$f^{-1}(E) \in \mathcal{A} \forall E \in \mathcal{E}$$
 \end{theorem}
 \begin{theorem}
 	Für $f: \Omega \to [-\infty, \infty]$ sind folgende Eigenschaften äquivalent:
@@ -292,7 +292,7 @@
 \begin{definition}[Wesentliches Supremum]
 	Das wesentliche Supremum für messbares $f$ sei definiert als:
 	$$\text{esssup}(f) := \inf\{M | M \geq f \text{ fast überall}\}$$
-	Außerdem seien $\mathcal{L}:=\{f|e\text{esssup}(f)< \infty\}$ und $L^\infty = \mathcal{L}^\infty/\sim$.
+	Außerdem seien $\mathcal{L}:=\{f|\text{esssup}(f)< \infty\}$ und $L^\infty = \mathcal{L}^\infty/\sim$.
 \end{definition}
 \begin{theorem}
 	Auf $L^p$ ist $\Vert f\Vert_\infty := \text{esssup}(f)$ eine Norm.
@@ -402,7 +402,7 @@
 \section{Parametertransformationen}
 \begin{theorem}[Transformationsformel]
 	Seien $\Phi: \tilde{\Omega} \to \Omega$  und $f:\Omega \to [0, \infty]$ messbar. Dann gilt:
-	$$\int_\Omega fd\Phi(\mu) = \in_{\tilde{\Omega}}f\circ \Phi d\mu$$
+	$$\int_\Omega fd\Phi(\mu) = \int_{\tilde{\Omega}}f\circ \Phi d\mu$$
 \end{theorem}
 \begin{theorem}[Transformationssatz von Jacobi]
 	Sei $U, V \subset \mathbb{R}^n, \Phi: U\to V$ ein Diffeomorphismus Sei $f: V\to [-\infty, \infty]$ messbar, dann gilt:
@@ -451,10 +451,10 @@ Einige nützliche Transformationen:
 	$$\overline{C_c^\infty}^{\Vert . \Vert_p} = L^p$$
 \end{theorem}
 \begin{theorem}[Egorov]
-	Sei $\lambda(\omega)$ endlich. Sei $f_j \to f$ fast überall so konvergiert $f_j$ fast gleichmäßig gegen $f$. D.h. zu jedem $\delta > 0$ existiert eine abgeschlossene Menge $E$ mit mit $\mu(E) < \delta$, sodass $f_j|_{E^c} \to f|_{E^c}$ gleichmäßig.
+	Sei $\lambda(\Omega)$ endlich. Sei $f_j \to f$ fast überall so konvergiert $f_j$ fast gleichmäßig gegen $f$. D.h. zu jedem $\delta > 0$ existiert eine abgeschlossene Menge $E$ mit mit $\mu(E) < \delta$, sodass $f_j|_{E^c} \to f|_{E^c}$ gleichmäßig.
 \end{theorem}
 \begin{theorem}[Lusin]
-	Sei $\lambda(\omega)$ endlich und $f \Omega \to \mathbb{R}$ integrierbar dann gibt es zu jedem $\epsilon > 0$ eine kompakte Menge $K$ mit $\mu(\Omega\backslash K) < \epsilon$ sodass $f|_K$ stetig ist.  
+	Sei $\lambda(\Omega)$ endlich und $f \Omega \to \mathbb{R}$ integrierbar dann gibt es zu jedem $\epsilon > 0$ eine kompakte Menge $K$ mit $\mu(\Omega\backslash K) < \epsilon$ sodass $f|_K$ stetig ist.  
 \end{theorem}
 \section{Hilberträume}
 \begin{definition}[Skalarprodukt]
@@ -550,9 +550,9 @@ Einige nützliche Transformationen:
 	heißt trigonometrisches Polynom vom Grad $N$.\\
 	Man kann sie auch in der Reellen Form darstellen als:
 	$$x \mapsto \frac{a_0}{2} + \sum_{k=1}^{N} a_k \cos(kx)+b_k\sin(kx)$$
-	Mit $$a_0 = wc_0, a_k = c_k +c_{-k}, b_k = i(c_k -c_{-k})$$.
+	Mit $$a_0 = 2c_0, a_k = c_k +c_{-k}, b_k = i(c_k -c_{-k})$$.
 	Die Umformung in die andere Richtung funktioniert mit:
-	$$c_0 = a_0/2, c_k = (a_K -ib_k)/2, c_{-k} = (a_k +ib_k)/2$$
+	$$c_0 = a_0/2, c_k = (a_k -ib_k)/2, c_{-k} = (a_k +ib_k)/2$$
 \end{definition}
 \begin{theorem}
 	Für ein trigonometrisches Polynom $t: I \to \mathbb{C}$ ist äquivalent:
@@ -581,7 +581,7 @@ Einige nützliche Transformationen:
 	Außerdem ist:
 	$$D_N(x) = \begin{cases}
 		\frac{1}{2\pi}(2N+1) & \text{falls } x= 2k\pi\\
-		\frac{1}{2\pi}\frac{\sin((2N+1)x/2)}{x/2} & \text{andernfalls}
+		\frac{1}{2\pi}\frac{\sin((2N+1)x/2)}{\sin(x/2)} & \text{andernfalls}
 	\end{cases}$$
 \end{definition}
 \begin{theorem}[Riemann-Lebesgue]
@@ -594,7 +594,7 @@ Einige nützliche Transformationen:
 \end{theorem}
 \begin{theorem}[Punktweise Konvergenz der Fourierreihe]
 	Sei $f\in L^1((-\pi, \pi))$ und besitze im Punkt $x$ links- und rechsseitige Ableitung, dann gilt:
-	$$\lim_{N\to\infty}(S_Nf)(x) = \frac{f(x+)- f(x-)}{2}$$
+	$$\lim_{N\to\infty}(S_Nf)(x) = \frac{f(x+)+ f(x-)}{2}$$
 \end{theorem}
 \begin{definition}
 	Man betrachtet auch das arithmetische Mittel der Fourierreihen:
@@ -618,7 +618,7 @@ Einige nützliche Transformationen:
 \end{theorem}
 \section{Kurvenintegral}
 \begin{definition}[Kurvenintegral]
-	Sei $F: \Omega \to mathbb{R}^n$ und $\gamma: [a, b] \to \Omega$ stetig differenzierbar, dann definiert man das Kurvenintegral über:
+	Sei $F: \Omega \to \mathbb{R}^n$ und $\gamma: [a, b] \to \Omega$ stetig differenzierbar, dann definiert man das Kurvenintegral über:
 	$$\int_{S(\gamma)}Fd\gamma = \int_{a}^{b}\langle F(\gamma(t)), \gamma'(t)\rangle dt$$
 \end{definition}
 \begin{theorem}
