@@ -312,7 +312,7 @@
 \begin{theorem}[Vollständigkeit der $L^p$-Räume]
 	Für $p \in [1, \infty]$ ist 
 \end{theorem}
-\begin{theorem}
+\begin{theorem}[Riesz-Fischer]
 	Falls $f_j \to f$ in $\Vert . \Vert_p$ Dann gibt es eine Teilfolge, sodass $f_{j_k} \to f$ fast überall. 
 \end{theorem}
 \begin{theorem}
@@ -442,7 +442,7 @@ Einige nützliche Transformationen:
 	$$\overline{C_c^\infty}^{\Vert . \Vert_p} = L^p$$
 \end{theorem}
 \begin{theorem}[Egorov]
-	Sei $\lambda(\omega)$ endlich. Sei $f_j \to f$ fast überall so konvergiert $f_j$ fast gleichmäßig gegen $f$. D.h. zu jedem $\delta > 0$ existiert eine Menge $E$ mit $\mu(E) < \delta$, sodass $f_j|_{E^c} \to f|_{E^c}$ gleichmäßig.
+	Sei $\lambda(\omega)$ endlich. Sei $f_j \to f$ fast überall so konvergiert $f_j$ fast gleichmäßig gegen $f$. D.h. zu jedem $\delta > 0$ existiert eine abgeschlossene Menge $E$ mit mit $\mu(E) < \delta$, sodass $f_j|_{E^c} \to f|_{E^c}$ gleichmäßig.
 \end{theorem}
 \begin{theorem}[Lusin]
 	Sei $\lambda(\omega)$ endlich und $f \Omega \to \mathbb{R}$ integrierbar dann gibt es zu jedem $\epsilon > 0$ eine kompakte Menge $K$ mit $\mu(\Omega\\K) < \epsilon$ sodass $f|_K$ stetig ist.  
@@ -524,6 +524,15 @@ Einige nützliche Transformationen:
 \end{theorem}
 \begin{theorem}
 	Jeder separable Hilbertraum ist isometrisch isomorph zu $l^2(\mathbb{K})$.
+\end{theorem}
+\begin{theorem}[Lax-Milgram]
+	Sei $a: X \times X \to \mathbb{K}$ eine Sesquilinearform mit:
+	$$|a(x, y)|\leq C_0 \Vert x\Vert \Vert y\Vert$$
+	$$\Re a(x, x) \geq c_0\Vert x\Vert^2$$
+	Dann exisitiert ein $A: X\to X$ mit:
+	$$a(x, y) = \langle Ax, y\rangle$$
+	und es gilt:
+	$$\Vert A\Vert \leq C_0, \Vert A^{-1}\Vert \leq \frac{1}{c_0}$$
 \end{theorem}
 \section{Fourier-Analysis}
 \begin{definition}[Trigonometrisches Polynom]
