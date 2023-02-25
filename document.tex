@@ -324,6 +324,15 @@
 		\item $f_j \to f$ im Maß, dann existiert eine Teilfolge $f_{j_k} \to f$ punktweise fast überall.
 	\end{itemize}
 \end{theorem}
+\begin{definition}[Bernstein-Polynom]
+	Wir definieren das Bernstein Polynom:
+	$$B_kf(x):=\sum_{j=1}^{k}f(\frac{j}{k})\binom{k}{j}x^j(1-x)^{k-j}$$
+\end{definition}
+\begin{theorem}[Weierstraß-Approximationssatz]
+	Für $f\in C[0, 1]$ gilt:
+	$$\Vert B_kf-f\Vert_\infty \to 0$$
+	Damit sind die Polynome dicht in $(C(K), \Vert .\Vert_\infty)$ für kompakte $K$.
+\end{theorem}
 \section{Parameterabhängige Integrale}
 \begin{theorem}
 	Sei $f: X \times \Omega \to \mathbb{R}$ mit $X \subset \mathbb{R}^n$ und weiterhin sei:
