@@ -76,7 +76,7 @@
 \end{definition}
 \begin{definition}[Ring]
 	Sei $\mathcal{R} \subset P(\Omega)$ mit:
-	$$A, B \in \mathcal{R} \Rightarrow A\\B \in \mathcal{R}$$
+	$$A, B \in \mathcal{R} \Rightarrow A\backslashB \in \mathcal{R}$$
 	$$A, B \in \mathcal{R} \Rightarrow A\cup B \in \mathbb{R}$$
 	Dann heißt $\mathcal{R}$ Ring.
 \end{definition}
@@ -141,7 +141,7 @@
 \end{definition}
 \begin{theorem}[Erstes Littlewood'sches Prinzip]
 	Sei $A \subset \mathbb{R}^n$, A ist Lebesgue-messbar genau dann wenn zu jedem $\epsilon > 0$ eine offene Menge $A \subset O_\epsilon$ existiert, sodass:
-	$$\lambda^{n, *} (O_\epsilon\\A) < \epsilon$$
+	$$\lambda^{n, *} (O_\epsilon\backslash A) < \epsilon$$
 \end{theorem}
 \begin{definition}[messbare Abbildung]
 	Für eine messbare Abbildung $f: (\Omega, \mathcal{A}) \to (\tilde{\Omega}, \tilde{\mathcal{A}})$ gilt: $^{-1}(A) \in \mathcal{A} \forall A \in \tilde{\mathcal{A}}$.
@@ -454,7 +454,7 @@ Einige nützliche Transformationen:
 	Sei $\lambda(\omega)$ endlich. Sei $f_j \to f$ fast überall so konvergiert $f_j$ fast gleichmäßig gegen $f$. D.h. zu jedem $\delta > 0$ existiert eine abgeschlossene Menge $E$ mit mit $\mu(E) < \delta$, sodass $f_j|_{E^c} \to f|_{E^c}$ gleichmäßig.
 \end{theorem}
 \begin{theorem}[Lusin]
-	Sei $\lambda(\omega)$ endlich und $f \Omega \to \mathbb{R}$ integrierbar dann gibt es zu jedem $\epsilon > 0$ eine kompakte Menge $K$ mit $\mu(\Omega\\K) < \epsilon$ sodass $f|_K$ stetig ist.  
+	Sei $\lambda(\omega)$ endlich und $f \Omega \to \mathbb{R}$ integrierbar dann gibt es zu jedem $\epsilon > 0$ eine kompakte Menge $K$ mit $\mu(\Omega\backslash K) < \epsilon$ sodass $f|_K$ stetig ist.  
 \end{theorem}
 \section{Hilberträume}
 \begin{definition}[Skalarprodukt]
@@ -701,7 +701,7 @@ Einige nützliche Transformationen:
 	Dann ist $\nu$ absolutstetig bzgl. $\mu$ ($\nu << \mu$), wenn $$\mu(A)  \Rightarrow \nu(A)= 0$$
 	Gilt die Umkehrung auch so heißen $\mu$ und $\nu$ äquivalent.\\
 	Das Maß $\mu$ heißt singulär zu $\nu$ ($\mu \perp \nu$), wenn ein $A$ existiert, sodass:
-	$$\mu(A) = 0 \land \nu(\Omega\\A) = 0$$
+	$$\mu(A) = 0 \land \nu(\Omega\backslash A) = 0$$
 \end{definition}
 \begin{theorem}[Zerlegungssatz von Lebesgue]
 	Seien $\mu$ und $\nu$ $\sigma$-endlich. Dann lässt sich $\nu$ auf eindeutige weise in einen absolutstetigen Teil $\nu_a$ und singulären Teil $\nu_s$ bezüglich $\mu$ zerlegen:
